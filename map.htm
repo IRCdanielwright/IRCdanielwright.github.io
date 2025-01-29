@@ -1,0 +1,2936 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dfd2679a11dfd14ab910d3b5692cf3d0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dfd2679a11dfd14ab910d3b5692cf3d0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dfd2679a11dfd14ab910d3b5692cf3d0 = L.map(
+                "map_dfd2679a11dfd14ab910d3b5692cf3d0",
+                {
+                    center: [32.4487, -99.7331],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e3eb4bf680c20d335909917fc9cd49f9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e3eb4bf680c20d335909917fc9cd49f9.addTo(map_dfd2679a11dfd14ab910d3b5692cf3d0);
+        
+    
+            var feature_group_d916f5ab93b9ffa73934d7107a407a6a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d61fbbb3d1bcbf0a1629b6b7be6225f2 = L.marker(
+                [32.46100432967644, -99.75976423054549],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_9d002cbf76ea856c7e4f70583daac787 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d61fbbb3d1bcbf0a1629b6b7be6225f2.setIcon(icon_9d002cbf76ea856c7e4f70583daac787);
+        
+    
+        var popup_d6c5c785001366be37cbccc7a73f6dc5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a523390c8a2a95a84293c28504003d6 = $(`<div id="html_2a523390c8a2a95a84293c28504003d6" style="width: 100.0%; height: 100.0%;"><a href="https://www.cscabilene.org/" target="_blank">Website</a></div>`)[0];
+                popup_d6c5c785001366be37cbccc7a73f6dc5.setContent(html_2a523390c8a2a95a84293c28504003d6);
+            
+        
+
+        marker_d61fbbb3d1bcbf0a1629b6b7be6225f2.bindPopup(popup_d6c5c785001366be37cbccc7a73f6dc5)
+        ;
+
+        
+    
+    
+            marker_d61fbbb3d1bcbf0a1629b6b7be6225f2.bindTooltip(
+                `<div>
+                     Christian Service Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8983412fd6628883383564980ad097bb = L.marker(
+                [32.47099396842267, -99.75804984772674],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_fa5a868c2b02433b9be16cb25297ded8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8983412fd6628883383564980ad097bb.setIcon(icon_fa5a868c2b02433b9be16cb25297ded8);
+        
+    
+        var popup_053126df2ffcac85be657629d026833d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7cfe57c199016a3afcc289fe7359d917 = $(`<div id="html_7cfe57c199016a3afcc289fe7359d917" style="width: 100.0%; height: 100.0%;"><a href="https://www.facebook.com/crescentheightsbaptistchurchabilene/" target="_blank">Facebook</a></div>`)[0];
+                popup_053126df2ffcac85be657629d026833d.setContent(html_7cfe57c199016a3afcc289fe7359d917);
+            
+        
+
+        marker_8983412fd6628883383564980ad097bb.bindPopup(popup_053126df2ffcac85be657629d026833d)
+        ;
+
+        
+    
+    
+            marker_8983412fd6628883383564980ad097bb.bindTooltip(
+                `<div>
+                     Crescent Heights Baptist Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_499e49ebbaffdc13274fbd9e9dffd610 = L.marker(
+                [32.4464375188334, -99.74937763423273],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_1552806cc996b0c7faed23ff4e356a9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_499e49ebbaffdc13274fbd9e9dffd610.setIcon(icon_1552806cc996b0c7faed23ff4e356a9f);
+        
+    
+        var popup_b74b535c9b6ef0c1e9cb88e844cebe7b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d45a721d4bbada9b2b78a586f462f44c = $(`<div id="html_d45a721d4bbada9b2b78a586f462f44c" style="width: 100.0%; height: 100.0%;"><a href="https://www.highlandchurch.org/pantry//" target="_blank">Website</a></div>`)[0];
+                popup_b74b535c9b6ef0c1e9cb88e844cebe7b.setContent(html_d45a721d4bbada9b2b78a586f462f44c);
+            
+        
+
+        marker_499e49ebbaffdc13274fbd9e9dffd610.bindPopup(popup_b74b535c9b6ef0c1e9cb88e844cebe7b)
+        ;
+
+        
+    
+    
+            marker_499e49ebbaffdc13274fbd9e9dffd610.bindTooltip(
+                `<div>
+                     Highland Church of Christ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e33f16043591f37165b260c51e8c5db5 = L.marker(
+                [32.45290887481718, -99.75666483423245],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_526ba8b9309508a18ef626f8ec163537 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e33f16043591f37165b260c51e8c5db5.setIcon(icon_526ba8b9309508a18ef626f8ec163537);
+        
+    
+        var popup_97315bd51ffa3b4982a43a31f746df05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de326ff7bbbc6a4f599ccd8ac1e4fc35 = $(`<div id="html_de326ff7bbbc6a4f599ccd8ac1e4fc35" style="width: 100.0%; height: 100.0%;"><a href="https://lcmin.com/" target="_blank">Website</a></div>`)[0];
+                popup_97315bd51ffa3b4982a43a31f746df05.setContent(html_de326ff7bbbc6a4f599ccd8ac1e4fc35);
+            
+        
+
+        marker_e33f16043591f37165b260c51e8c5db5.bindPopup(popup_97315bd51ffa3b4982a43a31f746df05)
+        ;
+
+        
+    
+    
+            marker_e33f16043591f37165b260c51e8c5db5.bindTooltip(
+                `<div>
+                     Love & Care Ministries
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d3b0180dea81e7f3c5b5d8e9dac3a43f = L.marker(
+                [32.45481301802139, -99.79475939005708],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_5ad6cbb126f209398f1cef36a970cdd9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d3b0180dea81e7f3c5b5d8e9dac3a43f.setIcon(icon_5ad6cbb126f209398f1cef36a970cdd9);
+        
+    
+        var popup_77433303ebd0c64c65b36ddb6ae8f0a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e99ed47a02c20e52eca831635cb76b2d = $(`<div id="html_e99ed47a02c20e52eca831635cb76b2d" style="width: 100.0%; height: 100.0%;"><a href="https://fbwct.org/" target="_blank">Website</a></div>`)[0];
+                popup_77433303ebd0c64c65b36ddb6ae8f0a8.setContent(html_e99ed47a02c20e52eca831635cb76b2d);
+            
+        
+
+        marker_d3b0180dea81e7f3c5b5d8e9dac3a43f.bindPopup(popup_77433303ebd0c64c65b36ddb6ae8f0a8)
+        ;
+
+        
+    
+    
+            marker_d3b0180dea81e7f3c5b5d8e9dac3a43f.bindTooltip(
+                `<div>
+                     Food Bank of Abilene INC.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5f644f700cc0fd97c56401c952bbf520 = L.marker(
+                [32.352502806409454, -99.773530049422],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_f1a327f9997b6f8bc9a92728e6fb3aa2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5f644f700cc0fd97c56401c952bbf520.setIcon(icon_f1a327f9997b6f8bc9a92728e6fb3aa2);
+        
+    
+        var popup_d4b081d25a04d82052dce7a2ed45805e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3470878df0bc21ae4ba318336cf853d6 = $(`<div id="html_3470878df0bc21ae4ba318336cf853d6" style="width: 100.0%; height: 100.0%;"><a href="https://beltway.org/ministries/care-support/food-pantry/">Website</a></div>`)[0];
+                popup_d4b081d25a04d82052dce7a2ed45805e.setContent(html_3470878df0bc21ae4ba318336cf853d6);
+            
+        
+
+        marker_5f644f700cc0fd97c56401c952bbf520.bindPopup(popup_d4b081d25a04d82052dce7a2ed45805e)
+        ;
+
+        
+    
+    
+            marker_5f644f700cc0fd97c56401c952bbf520.bindTooltip(
+                `<div>
+                     Beltway Park Church (South)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_53fcc8e952df44ba510b0cc331d461e0 = L.marker(
+                [32.495663757483385, -99.66915994188255],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_e6148995797af205b9f9c93f80802ffb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_53fcc8e952df44ba510b0cc331d461e0.setIcon(icon_e6148995797af205b9f9c93f80802ffb);
+        
+    
+        var popup_21a383cfa99bfad7e101bb54ee6f1ec4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c8857bf49998e7399ec4e6c79c4a9d3 = $(`<div id="html_1c8857bf49998e7399ec4e6c79c4a9d3" style="width: 100.0%; height: 100.0%;"><a href="https://beltway.org/ministries/care-support/food-pantry/">Website</a></div>`)[0];
+                popup_21a383cfa99bfad7e101bb54ee6f1ec4.setContent(html_1c8857bf49998e7399ec4e6c79c4a9d3);
+            
+        
+
+        marker_53fcc8e952df44ba510b0cc331d461e0.bindPopup(popup_21a383cfa99bfad7e101bb54ee6f1ec4)
+        ;
+
+        
+    
+    
+            marker_53fcc8e952df44ba510b0cc331d461e0.bindTooltip(
+                `<div>
+                     Beltway Park Church (North)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c67bf0a9c38b0d9b3a4a476507e96df6 = L.marker(
+                [32.445083545103145, -99.78023836458364],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_ca0643f39363b6d008efa54af92faae3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c67bf0a9c38b0d9b3a4a476507e96df6.setIcon(icon_ca0643f39363b6d008efa54af92faae3);
+        
+    
+        var popup_2b07b9071274f297e728dc722d8fe85b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fe870843244fdd4b1d10fa7f37453b2 = $(`<div id="html_0fe870843244fdd4b1d10fa7f37453b2" style="width: 100.0%; height: 100.0%;"><a href="https://homelessresources.networkofcare.org/texas/services/agency?pid=AbileneBaptistSocialMinistriesABSMFoodPantries_21_1756_1" target="_blank">Information</a></div>`)[0];
+                popup_2b07b9071274f297e728dc722d8fe85b.setContent(html_0fe870843244fdd4b1d10fa7f37453b2);
+            
+        
+
+        marker_c67bf0a9c38b0d9b3a4a476507e96df6.bindPopup(popup_2b07b9071274f297e728dc722d8fe85b)
+        ;
+
+        
+    
+    
+            marker_c67bf0a9c38b0d9b3a4a476507e96df6.bindTooltip(
+                `<div>
+                     Abilene Baptist Social Ministries Food Pantry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9b201747292198cd5e5e4c1d8c2936ab = L.marker(
+                [32.44425877423999, -99.74524801591576],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_eb0090f92967c1c4de3b7c2778a124ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9b201747292198cd5e5e4c1d8c2936ab.setIcon(icon_eb0090f92967c1c4de3b7c2778a124ab);
+        
+    
+        var popup_855e6cade949cfb4e5743af62614f401 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab27e923592628251b6f089e0cd7363e = $(`<div id="html_ab27e923592628251b6f089e0cd7363e" style="width: 100.0%; height: 100.0%;"><a href="https://www.heavenlyrestabilene.org/" target="_blank">Website</a></div>`)[0];
+                popup_855e6cade949cfb4e5743af62614f401.setContent(html_ab27e923592628251b6f089e0cd7363e);
+            
+        
+
+        marker_9b201747292198cd5e5e4c1d8c2936ab.bindPopup(popup_855e6cade949cfb4e5743af62614f401)
+        ;
+
+        
+    
+    
+            marker_9b201747292198cd5e5e4c1d8c2936ab.bindTooltip(
+                `<div>
+                     Heavenly Rest Church Food Pantry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c1866966a0740b3037a62771ce699f02 = L.marker(
+                [32.4529018009577, -99.73744033054157],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_6c68926936bd8c79c5aa197eed0c4bcf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c1866966a0740b3037a62771ce699f02.setIcon(icon_6c68926936bd8c79c5aa197eed0c4bcf);
+        
+    
+        var popup_8b5e1c0d864e84638817944232655d3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39e5220b271698a740f518169aceed5e = $(`<div id="html_39e5220b271698a740f518169aceed5e" style="width: 100.0%; height: 100.0%;"><a href="https://fcpc.net/serve/presbyterian-food-pantry" target="_blank">Website</a></div>`)[0];
+                popup_8b5e1c0d864e84638817944232655d3b.setContent(html_39e5220b271698a740f518169aceed5e);
+            
+        
+
+        marker_c1866966a0740b3037a62771ce699f02.bindPopup(popup_8b5e1c0d864e84638817944232655d3b)
+        ;
+
+        
+    
+    
+            marker_c1866966a0740b3037a62771ce699f02.bindTooltip(
+                `<div>
+                     Presbyterian Food Pantry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d06e0bb115d8a45fd160a8de5254e20a = L.marker(
+                [32.45145557115808, -99.75392958665454],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_2f38e0f1e9f5ce027b1efe51efc1668b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d06e0bb115d8a45fd160a8de5254e20a.setIcon(icon_2f38e0f1e9f5ce027b1efe51efc1668b);
+        
+    
+        var popup_80fab13d6fcbca977f91f4ba5a885218 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0bc95abf48de96ca5a0c837cf327d951 = $(`<div id="html_0bc95abf48de96ca5a0c837cf327d951" style="width: 100.0%; height: 100.0%;"><a href="https://methodist-pantry.edan.io/" target="_blank">Info</a></div>`)[0];
+                popup_80fab13d6fcbca977f91f4ba5a885218.setContent(html_0bc95abf48de96ca5a0c837cf327d951);
+            
+        
+
+        marker_d06e0bb115d8a45fd160a8de5254e20a.bindPopup(popup_80fab13d6fcbca977f91f4ba5a885218)
+        ;
+
+        
+    
+    
+            marker_d06e0bb115d8a45fd160a8de5254e20a.bindTooltip(
+                `<div>
+                     United Methodist Food Pantry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a52d7ac4636a051329c416abeeeeb8ad = L.marker(
+                [32.44110657366847, -99.74245449617045],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_da726b10ffc40f6c141cdf7187580049 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a52d7ac4636a051329c416abeeeeb8ad.setIcon(icon_da726b10ffc40f6c141cdf7187580049);
+        
+    
+        var popup_288b2c86a95d7c086a5b06d585604676 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_828ae832899eb2f23682ebd67e66ab4d = $(`<div id="html_828ae832899eb2f23682ebd67e66ab4d" style="width: 100.0%; height: 100.0%;"><a href="https://www.sacredheartabilene.org/" target="_blank">Website</a></div>`)[0];
+                popup_288b2c86a95d7c086a5b06d585604676.setContent(html_828ae832899eb2f23682ebd67e66ab4d);
+            
+        
+
+        marker_a52d7ac4636a051329c416abeeeeb8ad.bindPopup(popup_288b2c86a95d7c086a5b06d585604676)
+        ;
+
+        
+    
+    
+            marker_a52d7ac4636a051329c416abeeeeb8ad.bindTooltip(
+                `<div>
+                     Sacred Heart Catholic Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ada690f8017f2e007e316514aa459cd1 = L.marker(
+                [32.461340828932336, -99.74704596122186],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_e325c05729c87025879425ecb6c732c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ada690f8017f2e007e316514aa459cd1.setIcon(icon_e325c05729c87025879425ecb6c732c3);
+        
+    
+        var popup_a69cd0f4bbcb8e8fe6b0b5e24841f186 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8f12eaee88bcdd903fd355516c3cb6b = $(`<div id="html_a8f12eaee88bcdd903fd355516c3cb6b" style="width: 100.0%; height: 100.0%;"><a href="https://www.foodpantries.org/li/bethlehem_pa-Abilen-79603" target="_blank">Website</a></div>`)[0];
+                popup_a69cd0f4bbcb8e8fe6b0b5e24841f186.setContent(html_a8f12eaee88bcdd903fd355516c3cb6b);
+            
+        
+
+        marker_ada690f8017f2e007e316514aa459cd1.bindPopup(popup_a69cd0f4bbcb8e8fe6b0b5e24841f186)
+        ;
+
+        
+    
+    
+            marker_ada690f8017f2e007e316514aa459cd1.bindTooltip(
+                `<div>
+                     Bethlehem Pantry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fc50644bdee630bdf1f04a0ac07949a8 = L.marker(
+                [32.44471569816194, -99.79420516700566],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_863f032f8021a6b26a93422fc71b7695 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fc50644bdee630bdf1f04a0ac07949a8.setIcon(icon_863f032f8021a6b26a93422fc71b7695);
+        
+    
+        var popup_244832b5eef72a41e57bf06956699914 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7b9a95e4336e02544f2d5dfa568c0f9 = $(`<div id="html_e7b9a95e4336e02544f2d5dfa568c0f9" style="width: 100.0%; height: 100.0%;"><a href="http://www.allforonemissions.org/food" target="_blank">Website</a></div>`)[0];
+                popup_244832b5eef72a41e57bf06956699914.setContent(html_e7b9a95e4336e02544f2d5dfa568c0f9);
+            
+        
+
+        marker_fc50644bdee630bdf1f04a0ac07949a8.bindPopup(popup_244832b5eef72a41e57bf06956699914)
+        ;
+
+        
+    
+    
+            marker_fc50644bdee630bdf1f04a0ac07949a8.bindTooltip(
+                `<div>
+                     All for One Missions Food Pantry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_af8aaf2e25640671431b717b4cb69270 = L.marker(
+                [32.45979455530402, -99.78851168815052],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_e137ebfdf24e33e733adacbdadf6f921 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_af8aaf2e25640671431b717b4cb69270.setIcon(icon_e137ebfdf24e33e733adacbdadf6f921);
+        
+    
+        var popup_5e928e1dd734cfee6999de799818e296 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b3cba25c9589fddf7806db54c3b4430 = $(`<div id="html_3b3cba25c9589fddf7806db54c3b4430" style="width: 100.0%; height: 100.0%;"><a href="https://www.facebook.com/holidayhillsbc/" target="_blank">Facebook</a></div>`)[0];
+                popup_5e928e1dd734cfee6999de799818e296.setContent(html_3b3cba25c9589fddf7806db54c3b4430);
+            
+        
+
+        marker_af8aaf2e25640671431b717b4cb69270.bindPopup(popup_5e928e1dd734cfee6999de799818e296)
+        ;
+
+        
+    
+    
+            marker_af8aaf2e25640671431b717b4cb69270.bindTooltip(
+                `<div>
+                     Holidays Hills Baptist Church Pantry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_035c887ce2d78e334ac025fcd1ca749d = L.marker(
+                [32.44380097482554, -99.71148219674683],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_4ba634543a969318ee9cf32c3f3b52c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_035c887ce2d78e334ac025fcd1ca749d.setIcon(icon_4ba634543a969318ee9cf32c3f3b52c3);
+        
+    
+        var popup_edc2f1c6656a6cbf25e4673c1237999a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_561a4cebe9ef42233ac9efa030b706f4 = $(`<div id="html_561a4cebe9ef42233ac9efa030b706f4" style="width: 100.0%; height: 100.0%;"><a href="https://www.facebook.com/mindastreet.coc/" target="_blank">Facebook</a></div>`)[0];
+                popup_edc2f1c6656a6cbf25e4673c1237999a.setContent(html_561a4cebe9ef42233ac9efa030b706f4);
+            
+        
+
+        marker_035c887ce2d78e334ac025fcd1ca749d.bindPopup(popup_edc2f1c6656a6cbf25e4673c1237999a)
+        ;
+
+        
+    
+    
+            marker_035c887ce2d78e334ac025fcd1ca749d.bindTooltip(
+                `<div>
+                     Minda Street Church of Christ Food
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8ab1f03a26ddee714034e32651894a6c = L.marker(
+                [32.444914173586746, -99.79694612500536],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_9f1469a59f6b85caf593e9d588a1a450 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8ab1f03a26ddee714034e32651894a6c.setIcon(icon_9f1469a59f6b85caf593e9d588a1a450);
+        
+    
+        var popup_bb2357b029291aafe324d6d0cf827eef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9834d5b8d6e51d052676cc5c0301a80f = $(`<div id="html_9834d5b8d6e51d052676cc5c0301a80f" style="width: 100.0%; height: 100.0%;"><a href="https://www.facebook.com/VictoryHouseAB/" target="_blank">Facebook</a></div>`)[0];
+                popup_bb2357b029291aafe324d6d0cf827eef.setContent(html_9834d5b8d6e51d052676cc5c0301a80f);
+            
+        
+
+        marker_8ab1f03a26ddee714034e32651894a6c.bindPopup(popup_bb2357b029291aafe324d6d0cf827eef)
+        ;
+
+        
+    
+    
+            marker_8ab1f03a26ddee714034e32651894a6c.bindTooltip(
+                `<div>
+                     The RCCG Victory House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f40e16b4dfcb5f88d54e28f52e7e529b = L.marker(
+                [32.413610937692674, -99.75244547866221],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_e25db24561112767b1291d6d1b7518f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f40e16b4dfcb5f88d54e28f52e7e529b.setIcon(icon_e25db24561112767b1291d6d1b7518f1);
+        
+    
+        var popup_5c2f731405adcae2a7d48458b7dd4714 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60add8700bb93ad51665f7955f60d755 = $(`<div id="html_60add8700bb93ad51665f7955f60d755" style="width: 100.0%; height: 100.0%;"><a href="https://wearesouthpointe.churchcenter.com/home" target="_blank">Website</a></div>`)[0];
+                popup_5c2f731405adcae2a7d48458b7dd4714.setContent(html_60add8700bb93ad51665f7955f60d755);
+            
+        
+
+        marker_f40e16b4dfcb5f88d54e28f52e7e529b.bindPopup(popup_5c2f731405adcae2a7d48458b7dd4714)
+        ;
+
+        
+    
+    
+            marker_f40e16b4dfcb5f88d54e28f52e7e529b.bindTooltip(
+                `<div>
+                     South Pointe Church Food Pantry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7b8893f87d5fa7ea8595d09a51f30a0b = L.marker(
+                [32.483244355902585, -99.74893674382714],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_b1e7f25f44b03e4d30cea5eafb126433 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7b8893f87d5fa7ea8595d09a51f30a0b.setIcon(icon_b1e7f25f44b03e4d30cea5eafb126433);
+        
+    
+        var popup_805f8103bac5291dbad27983ee07e772 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fb254d94b031c82de9708fde60b50fe = $(`<div id="html_5fb254d94b031c82de9708fde60b50fe" style="width: 100.0%; height: 100.0%;"><a href="https://stvincent-pallotti.org/" target="_blank">Website</a></div>`)[0];
+                popup_805f8103bac5291dbad27983ee07e772.setContent(html_5fb254d94b031c82de9708fde60b50fe);
+            
+        
+
+        marker_7b8893f87d5fa7ea8595d09a51f30a0b.bindPopup(popup_805f8103bac5291dbad27983ee07e772)
+        ;
+
+        
+    
+    
+            marker_7b8893f87d5fa7ea8595d09a51f30a0b.bindTooltip(
+                `<div>
+                     St Vincent Pallotti Catholic Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3f984a78509b52fcdfcf2c208d704a1a = L.marker(
+                [32.416771413455315, -99.79381885257239],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_adec71c22e801966484a7963b4ae3691 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3f984a78509b52fcdfcf2c208d704a1a.setIcon(icon_adec71c22e801966484a7963b4ae3691);
+        
+    
+        var popup_73463a57337ca91b076efff8049d1b74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f04418106e58730f984958603ec0a2e9 = $(`<div id="html_f04418106e58730f984958603ec0a2e9" style="width: 100.0%; height: 100.0%;"><a href="https://www.facebook.com/p/Faith-Deliverance-Community-Church-100064439479525/" target="_blank">Facebook</a></div>`)[0];
+                popup_73463a57337ca91b076efff8049d1b74.setContent(html_f04418106e58730f984958603ec0a2e9);
+            
+        
+
+        marker_3f984a78509b52fcdfcf2c208d704a1a.bindPopup(popup_73463a57337ca91b076efff8049d1b74)
+        ;
+
+        
+    
+    
+            marker_3f984a78509b52fcdfcf2c208d704a1a.bindTooltip(
+                `<div>
+                     Faith Deliverance Community Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_46dda4eae8f34d6286bc8ddfcf5ff9ef = L.marker(
+                [32.44158713611253, -99.75450405995348],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_19b15db776cb2c0df41bcd256ecb8c51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_46dda4eae8f34d6286bc8ddfcf5ff9ef.setIcon(icon_19b15db776cb2c0df41bcd256ecb8c51);
+        
+    
+        var popup_cb14eb8e40dae60f9fe2755ef5e4488c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27245570615228baa80200999f467399 = $(`<div id="html_27245570615228baa80200999f467399" style="width: 100.0%; height: 100.0%;"><a href="https://abilenetx.gov/facilities/facility/details/Rose-Park-Senior-Activity-Center-53" target="_blank">Website</a></div>`)[0];
+                popup_cb14eb8e40dae60f9fe2755ef5e4488c.setContent(html_27245570615228baa80200999f467399);
+            
+        
+
+        marker_46dda4eae8f34d6286bc8ddfcf5ff9ef.bindPopup(popup_cb14eb8e40dae60f9fe2755ef5e4488c)
+        ;
+
+        
+    
+    
+            marker_46dda4eae8f34d6286bc8ddfcf5ff9ef.bindTooltip(
+                `<div>
+                     Rose Park Senior Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_01ff893c547e89cf56981a42bffe85ca = L.marker(
+                [32.45274620808027, -99.73798694588183],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_7bed93752c14309dbbd5f83c6ed7341d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_01ff893c547e89cf56981a42bffe85ca.setIcon(icon_7bed93752c14309dbbd5f83c6ed7341d);
+        
+    
+        var popup_dd651a1d5cf17e7d47384013d813f0a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9bdab846682d96e86cf428f2f7bc289 = $(`<div id="html_b9bdab846682d96e86cf428f2f7bc289" style="width: 100.0%; height: 100.0%;"><a href="https://fcpc.net/serve/bobs-breakfast-on-beech-street" target="_blank">Website</a></div>`)[0];
+                popup_dd651a1d5cf17e7d47384013d813f0a9.setContent(html_b9bdab846682d96e86cf428f2f7bc289);
+            
+        
+
+        marker_01ff893c547e89cf56981a42bffe85ca.bindPopup(popup_dd651a1d5cf17e7d47384013d813f0a9)
+        ;
+
+        
+    
+    
+            marker_01ff893c547e89cf56981a42bffe85ca.bindTooltip(
+                `<div>
+                     Breakfast on Beech Street (B.O.B.S)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0b2db1e620ca1700aa87e9063d4c173b = L.marker(
+                [32.45635584448183, -99.73812148463117],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_7abc94c0316479206a76bb5b10ff504c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0b2db1e620ca1700aa87e9063d4c173b.setIcon(icon_7abc94c0316479206a76bb5b10ff504c);
+        
+    
+        var popup_17e7ccd1fa3ae23a95b45be7772f446d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18a8aa575d232eaadb52134a9c03116e = $(`<div id="html_18a8aa575d232eaadb52134a9c03116e" style="width: 100.0%; height: 100.0%;"><a href="https://www.facebook.com/FirstBaptistChurchAbilene/" target="_blank">Facebook</a></div>`)[0];
+                popup_17e7ccd1fa3ae23a95b45be7772f446d.setContent(html_18a8aa575d232eaadb52134a9c03116e);
+            
+        
+
+        marker_0b2db1e620ca1700aa87e9063d4c173b.bindPopup(popup_17e7ccd1fa3ae23a95b45be7772f446d)
+        ;
+
+        
+    
+    
+            marker_0b2db1e620ca1700aa87e9063d4c173b.bindTooltip(
+                `<div>
+                     City Light Ministries
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9a57efa9e37b361869cfd641e132db5b = L.marker(
+                [32.46463061056373, -99.73909623931897],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_032476765b8ae0c3c9ceb6adf06ffae8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9a57efa9e37b361869cfd641e132db5b.setIcon(icon_032476765b8ae0c3c9ceb6adf06ffae8);
+        
+    
+        var popup_30a307a4271a636b182a883423ac0335 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70b2d766c86c5de81a68b922fe54b74c = $(`<div id="html_70b2d766c86c5de81a68b922fe54b74c" style="width: 100.0%; height: 100.0%;"><a href="https://www.facebook.com/Church.on.the.Rock.Abilene/" target="_blank">Facebook</a></div>`)[0];
+                popup_30a307a4271a636b182a883423ac0335.setContent(html_70b2d766c86c5de81a68b922fe54b74c);
+            
+        
+
+        marker_9a57efa9e37b361869cfd641e132db5b.bindPopup(popup_30a307a4271a636b182a883423ac0335)
+        ;
+
+        
+    
+    
+            marker_9a57efa9e37b361869cfd641e132db5b.bindTooltip(
+                `<div>
+                     Church on the Rock
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cf36dbf7798deda1a3ff08bd60bca638 = L.marker(
+                [32.37522804146482, -99.7430022268963],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_f75b054430cc73fbdcebde1ec0382742 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cf36dbf7798deda1a3ff08bd60bca638.setIcon(icon_f75b054430cc73fbdcebde1ec0382742);
+        
+    
+        var popup_773534d7c2f3a82b347274675c77ae3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60da08ab6be219e78b28fab6da9c034d = $(`<div id="html_60da08ab6be219e78b28fab6da9c034d" style="width: 100.0%; height: 100.0%;"><a href="" target="_blank">Website</a></div>`)[0];
+                popup_773534d7c2f3a82b347274675c77ae3d.setContent(html_60da08ab6be219e78b28fab6da9c034d);
+            
+        
+
+        marker_cf36dbf7798deda1a3ff08bd60bca638.bindPopup(popup_773534d7c2f3a82b347274675c77ae3d)
+        ;
+
+        
+    
+    
+            marker_cf36dbf7798deda1a3ff08bd60bca638.bindTooltip(
+                `<div>
+                     Hendrick Medical Center South
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cce303098deabb796d295aa1a81891ff = L.marker(
+                [32.45564276503333, -99.73063556476593],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_378513ab033572fc672ab82cc6cf7925 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cce303098deabb796d295aa1a81891ff.setIcon(icon_378513ab033572fc672ab82cc6cf7925);
+        
+    
+        var popup_93dac84f8629df178894be82d3acfe74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc8e77b41d6ae1605b84fd10af8bccda = $(`<div id="html_fc8e77b41d6ae1605b84fd10af8bccda" style="width: 100.0%; height: 100.0%;"><a href="" target="_blank">Website</a></div>`)[0];
+                popup_93dac84f8629df178894be82d3acfe74.setContent(html_fc8e77b41d6ae1605b84fd10af8bccda);
+            
+        
+
+        marker_cce303098deabb796d295aa1a81891ff.bindPopup(popup_93dac84f8629df178894be82d3acfe74)
+        ;
+
+        
+    
+    
+            marker_cce303098deabb796d295aa1a81891ff.bindTooltip(
+                `<div>
+                     Abilene Health Department
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_59a8082118bf9a5da9e804329c35d86d = L.marker(
+                [32.46994293387211, -99.73027191682118],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_4db1c4c88220042d09dddf5b9a322a67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_59a8082118bf9a5da9e804329c35d86d.setIcon(icon_4db1c4c88220042d09dddf5b9a322a67);
+        
+    
+        var popup_52154e3589a6dcf601b67c5b679fcf76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43a2974352d30de16a0fd90609b5c6dd = $(`<div id="html_43a2974352d30de16a0fd90609b5c6dd" style="width: 100.0%; height: 100.0%;"><a href="" target="_blank">Website</a></div>`)[0];
+                popup_52154e3589a6dcf601b67c5b679fcf76.setContent(html_43a2974352d30de16a0fd90609b5c6dd);
+            
+        
+
+        marker_59a8082118bf9a5da9e804329c35d86d.bindPopup(popup_52154e3589a6dcf601b67c5b679fcf76)
+        ;
+
+        
+    
+    
+            marker_59a8082118bf9a5da9e804329c35d86d.bindTooltip(
+                `<div>
+                     Community Health Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e74cfa0a9ad5fcded51217a512af343d = L.marker(
+                [32.47604619308346, -99.72222244692863],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_a93fcd2c1804372f6ad4f4f2929acddd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e74cfa0a9ad5fcded51217a512af343d.setIcon(icon_a93fcd2c1804372f6ad4f4f2929acddd);
+        
+    
+        var popup_85b03e9320d7446388d4589b14f5b991 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f97a59c2aad5162e075dc67fe2fe621c = $(`<div id="html_f97a59c2aad5162e075dc67fe2fe621c" style="width: 100.0%; height: 100.0%;"><a href="" target="_blank">Website</a></div>`)[0];
+                popup_85b03e9320d7446388d4589b14f5b991.setContent(html_f97a59c2aad5162e075dc67fe2fe621c);
+            
+        
+
+        marker_e74cfa0a9ad5fcded51217a512af343d.bindPopup(popup_85b03e9320d7446388d4589b14f5b991)
+        ;
+
+        
+    
+    
+            marker_e74cfa0a9ad5fcded51217a512af343d.bindTooltip(
+                `<div>
+                     Hendrick Medical Center (North)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e2b670435ad7e939abf1e5d05740902e = L.marker(
+                [32.475873976366046, -99.71752720572877],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_c6b875fb1a8dee43f6037b370859c9d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e2b670435ad7e939abf1e5d05740902e.setIcon(icon_c6b875fb1a8dee43f6037b370859c9d7);
+        
+    
+        var popup_a7cf1b09dbe10dbc569e692cbf18d1f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b87f7dfb6f075bb30346144213c6c622 = $(`<div id="html_b87f7dfb6f075bb30346144213c6c622" style="width: 100.0%; height: 100.0%;"><a href="" target="_blank">Website</a></div>`)[0];
+                popup_a7cf1b09dbe10dbc569e692cbf18d1f5.setContent(html_b87f7dfb6f075bb30346144213c6c622);
+            
+        
+
+        marker_e2b670435ad7e939abf1e5d05740902e.bindPopup(popup_a7cf1b09dbe10dbc569e692cbf18d1f5)
+        ;
+
+        
+    
+    
+            marker_e2b670435ad7e939abf1e5d05740902e.bindTooltip(
+                `<div>
+                     Presbyterian Medical Care Mission
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_962c6efa12bca63fea4dd90c39e88289 = L.marker(
+                [32.45541775755885, -99.73052783983553],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_bad85e8e9b88806e9f46cf8e8ab5234e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_962c6efa12bca63fea4dd90c39e88289.setIcon(icon_bad85e8e9b88806e9f46cf8e8ab5234e);
+        
+    
+        var popup_bf0be72e3a7c6f3eeda908bfce4918df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa53692dea577cd1b16076f4985755f1 = $(`<div id="html_aa53692dea577cd1b16076f4985755f1" style="width: 100.0%; height: 100.0%;"><a href="" target="_blank">Website</a></div>`)[0];
+                popup_bf0be72e3a7c6f3eeda908bfce4918df.setContent(html_aa53692dea577cd1b16076f4985755f1);
+            
+        
+
+        marker_962c6efa12bca63fea4dd90c39e88289.bindPopup(popup_bf0be72e3a7c6f3eeda908bfce4918df)
+        ;
+
+        
+    
+    
+            marker_962c6efa12bca63fea4dd90c39e88289.bindTooltip(
+                `<div>
+                     MERCY Health Care Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7a78e76e58532a96bcb71ce34b7777d0 = L.marker(
+                [32.47063569574441, -99.7354681054519],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_b0bad5f13d70b797eee7a3984b6f1278 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7a78e76e58532a96bcb71ce34b7777d0.setIcon(icon_b0bad5f13d70b797eee7a3984b6f1278);
+        
+    
+        var popup_ab4c19aa2128526b29a4f34b36569589 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c72e9cff2429382134cdf4180038c1c9 = $(`<div id="html_c72e9cff2429382134cdf4180038c1c9" style="width: 100.0%; height: 100.0%;"><a href="" target="_blank">Website</a></div>`)[0];
+                popup_ab4c19aa2128526b29a4f34b36569589.setContent(html_c72e9cff2429382134cdf4180038c1c9);
+            
+        
+
+        marker_7a78e76e58532a96bcb71ce34b7777d0.bindPopup(popup_ab4c19aa2128526b29a4f34b36569589)
+        ;
+
+        
+    
+    
+            marker_7a78e76e58532a96bcb71ce34b7777d0.bindTooltip(
+                `<div>
+                     Vera West Women's Clinic
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_547ca4c50cd385daba2eef24a45be1b8 = L.marker(
+                [32.37530453541651, -99.74395408465767],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_554e9863c0c73d4d7bd5b389184d219b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_547ca4c50cd385daba2eef24a45be1b8.setIcon(icon_554e9863c0c73d4d7bd5b389184d219b);
+        
+    
+        var popup_3a351fc9801ae442ba5aaffb03d91884 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02ed917c234146fcd890df09dd217f9c = $(`<div id="html_02ed917c234146fcd890df09dd217f9c" style="width: 100.0%; height: 100.0%;"><a href="" target="_blank">Website</a></div>`)[0];
+                popup_3a351fc9801ae442ba5aaffb03d91884.setContent(html_02ed917c234146fcd890df09dd217f9c);
+            
+        
+
+        marker_547ca4c50cd385daba2eef24a45be1b8.bindPopup(popup_3a351fc9801ae442ba5aaffb03d91884)
+        ;
+
+        
+    
+    
+            marker_547ca4c50cd385daba2eef24a45be1b8.bindTooltip(
+                `<div>
+                     Abilene Physicians Group
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_003b07d5a50d21ba066bc62b451b8a2f = L.marker(
+                [32.37255514075837, -99.743945689565],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_2251b1e67d201ece60146dbb4901c343 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_003b07d5a50d21ba066bc62b451b8a2f.setIcon(icon_2251b1e67d201ece60146dbb4901c343);
+        
+    
+        var popup_ec361631a6cb173187e8694e2b2e2b21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1c34a1a5266ee052c0df827aced1af2 = $(`<div id="html_c1c34a1a5266ee052c0df827aced1af2" style="width: 100.0%; height: 100.0%;"><a href="" target="_blank">Website</a></div>`)[0];
+                popup_ec361631a6cb173187e8694e2b2e2b21.setContent(html_c1c34a1a5266ee052c0df827aced1af2);
+            
+        
+
+        marker_003b07d5a50d21ba066bc62b451b8a2f.bindPopup(popup_ec361631a6cb173187e8694e2b2e2b21)
+        ;
+
+        
+    
+    
+            marker_003b07d5a50d21ba066bc62b451b8a2f.bindTooltip(
+                `<div>
+                     Walk-in Clinic South
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dcd2f8c030900ee1299602494ce0203a = L.marker(
+                [32.445164593997596, -99.73273847291954],
+                {
+}
+            ).addTo(feature_group_d916f5ab93b9ffa73934d7107a407a6a);
+        
+    
+            var icon_83576ce0bdf9bda4b90c0c1369e31a15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_dcd2f8c030900ee1299602494ce0203a.setIcon(icon_83576ce0bdf9bda4b90c0c1369e31a15);
+        
+    
+        var popup_35a8e02c8557ed51ccbc7b1a8a7af362 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_452f451dade2541111e893afa128542c = $(`<div id="html_452f451dade2541111e893afa128542c" style="width: 100.0%; height: 100.0%;"><a href="" target="_blank">Website</a></div>`)[0];
+                popup_35a8e02c8557ed51ccbc7b1a8a7af362.setContent(html_452f451dade2541111e893afa128542c);
+            
+        
+
+        marker_dcd2f8c030900ee1299602494ce0203a.bindPopup(popup_35a8e02c8557ed51ccbc7b1a8a7af362)
+        ;
+
+        
+    
+    
+            marker_dcd2f8c030900ee1299602494ce0203a.bindTooltip(
+                `<div>
+                     Taylor County Indigent Health Care
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_d916f5ab93b9ffa73934d7107a407a6a.addTo(map_dfd2679a11dfd14ab910d3b5692cf3d0);
+        
+    
+            var feature_group_2f05abf8ba7bd2d84890212e025ad7da = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_2f05abf8ba7bd2d84890212e025ad7da.addTo(map_dfd2679a11dfd14ab910d3b5692cf3d0);
+        
+    
+            var feature_group_da81031a1a118cffb5f0784ee82cf5d8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_9b094285143cb825b9a712065587fc98 = L.marker(
+                [32.4289005826012, -99.7388682780456],
+                {
+}
+            ).addTo(feature_group_da81031a1a118cffb5f0784ee82cf5d8);
+        
+    
+            var icon_970d1390f3fd4380e8525c25ea42fea1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9b094285143cb825b9a712065587fc98.setIcon(icon_970d1390f3fd4380e8525c25ea42fea1);
+        
+    
+        var popup_d9bb23bb9f4e276341055b4d5fd39646 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1634837053856cd9c473f693a4fa37e4 = $(`<div id="html_1634837053856cd9c473f693a4fa37e4" style="width: 100.0%; height: 100.0%;"><a href="https://southernusa.salvationarmy.org/texas-abilene/" target="_blank">Website</a></div>`)[0];
+                popup_d9bb23bb9f4e276341055b4d5fd39646.setContent(html_1634837053856cd9c473f693a4fa37e4);
+            
+        
+
+        marker_9b094285143cb825b9a712065587fc98.bindPopup(popup_d9bb23bb9f4e276341055b4d5fd39646)
+        ;
+
+        
+    
+    
+            marker_9b094285143cb825b9a712065587fc98.bindTooltip(
+                `<div>
+                     Salvation Army
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7425e26f930f31ce002145a00113d086 = L.marker(
+                [32.440592305356525, -99.72826663360566],
+                {
+}
+            ).addTo(feature_group_da81031a1a118cffb5f0784ee82cf5d8);
+        
+    
+            var icon_1792e48981a8a3414bda3aa518d3d9b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7425e26f930f31ce002145a00113d086.setIcon(icon_1792e48981a8a3414bda3aa518d3d9b0);
+        
+    
+        var popup_6f7330ca5b1a65b681dcb50bec0c95f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca1bd667a69301ff15fab41ada1eaf3a = $(`<div id="html_ca1bd667a69301ff15fab41ada1eaf3a" style="width: 100.0%; height: 100.0%;"><a href="https://www.abilenehopehaven.org/" target="_blank">Website</a></div>`)[0];
+                popup_6f7330ca5b1a65b681dcb50bec0c95f5.setContent(html_ca1bd667a69301ff15fab41ada1eaf3a);
+            
+        
+
+        marker_7425e26f930f31ce002145a00113d086.bindPopup(popup_6f7330ca5b1a65b681dcb50bec0c95f5)
+        ;
+
+        
+    
+    
+            marker_7425e26f930f31ce002145a00113d086.bindTooltip(
+                `<div>
+                     Abilene Hope Haven Inc
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0cbda370aae3fb3ccee606a4b4af39c4 = L.marker(
+                [32.42484304671182, -99.80080553374006],
+                {
+}
+            ).addTo(feature_group_da81031a1a118cffb5f0784ee82cf5d8);
+        
+    
+            var icon_b30a6b4ffa98be3e66e412d6e4a7ddc2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0cbda370aae3fb3ccee606a4b4af39c4.setIcon(icon_b30a6b4ffa98be3e66e412d6e4a7ddc2);
+        
+    
+        var popup_e237b97a2e43e246c9a6fe2b502d7914 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa016e0596ddc87f4c984cf2dc8d2df8 = $(`<div id="html_aa016e0596ddc87f4c984cf2dc8d2df8" style="width: 100.0%; height: 100.0%;"><a href="https://noahproject.org/" target="_blank">Website</a></div>`)[0];
+                popup_e237b97a2e43e246c9a6fe2b502d7914.setContent(html_aa016e0596ddc87f4c984cf2dc8d2df8);
+            
+        
+
+        marker_0cbda370aae3fb3ccee606a4b4af39c4.bindPopup(popup_e237b97a2e43e246c9a6fe2b502d7914)
+        ;
+
+        
+    
+    
+            marker_0cbda370aae3fb3ccee606a4b4af39c4.bindTooltip(
+                `<div>
+                     Noah Project
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b74b9159d27b0bf44af66a360c819fa3 = L.marker(
+                [32.45304531000045, -99.73880879766284],
+                {
+}
+            ).addTo(feature_group_da81031a1a118cffb5f0784ee82cf5d8);
+        
+    
+            var icon_c9e9d0a57c27ad672551ae1b920a8f5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b74b9159d27b0bf44af66a360c819fa3.setIcon(icon_c9e9d0a57c27ad672551ae1b920a8f5d);
+        
+    
+        var popup_ee1adfbf6a9d0b235661d89d08faae3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c0f1c8de50b4779337caab9a51970a7 = $(`<div id="html_1c0f1c8de50b4779337caab9a51970a7" style="width: 100.0%; height: 100.0%;"><a href="http://www.harmonyfamilyservices.org/" target="_blank">Website</a></div>`)[0];
+                popup_ee1adfbf6a9d0b235661d89d08faae3d.setContent(html_1c0f1c8de50b4779337caab9a51970a7);
+            
+        
+
+        marker_b74b9159d27b0bf44af66a360c819fa3.bindPopup(popup_ee1adfbf6a9d0b235661d89d08faae3d)
+        ;
+
+        
+    
+    
+            marker_b74b9159d27b0bf44af66a360c819fa3.bindTooltip(
+                `<div>
+                     Harmony Family Services Inc
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_da81031a1a118cffb5f0784ee82cf5d8.addTo(map_dfd2679a11dfd14ab910d3b5692cf3d0);
+        
+    
+            var feature_group_2d85349280f0b843a72d46e387a3b3d0 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_91deb9ef44e466daf58a88fcdab83108 = L.marker(
+                [32.45399193774133, -99.73097549559823],
+                {
+}
+            ).addTo(feature_group_2d85349280f0b843a72d46e387a3b3d0);
+        
+    
+            var icon_8b660ad5385b4b83a62fa41995c84388 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_91deb9ef44e466daf58a88fcdab83108.setIcon(icon_8b660ad5385b4b83a62fa41995c84388);
+        
+    
+        var popup_6fa3a7ac30ca1bfc194ccbabddf49d5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b6520390bf7318c41f22a0f03759060 = $(`<div id="html_6b6520390bf7318c41f22a0f03759060" style="width: 100.0%; height: 100.0%;"><a href="https://abilenetx.gov/facilities/facility/details/Abilene-City-Hall-85abilene " target="_blank">Website</a></div>`)[0];
+                popup_6fa3a7ac30ca1bfc194ccbabddf49d5d.setContent(html_6b6520390bf7318c41f22a0f03759060);
+            
+        
+
+        marker_91deb9ef44e466daf58a88fcdab83108.bindPopup(popup_6fa3a7ac30ca1bfc194ccbabddf49d5d)
+        ;
+
+        
+    
+    
+            marker_91deb9ef44e466daf58a88fcdab83108.bindTooltip(
+                `<div>
+                     City Hall
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e31d06b6f0bdcd19e6a2bd865a6bd803 = L.marker(
+                [32.44931550112866, -99.78188654844233],
+                {
+}
+            ).addTo(feature_group_2d85349280f0b843a72d46e387a3b3d0);
+        
+    
+            var icon_959eccfa98f909eef8c7458773b52a87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e31d06b6f0bdcd19e6a2bd865a6bd803.setIcon(icon_959eccfa98f909eef8c7458773b52a87);
+        
+    
+        var popup_cfec85cc4dcbc4fb25eee74dd28d9206 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2973f85c4969a75327e02e4e0663ea93 = $(`<div id="html_2973f85c4969a75327e02e4e0663ea93" style="width: 100.0%; height: 100.0%;"><a href="https://www.abilenetx.gov/275/Municipal-Court" target="_blank">Website</a></div>`)[0];
+                popup_cfec85cc4dcbc4fb25eee74dd28d9206.setContent(html_2973f85c4969a75327e02e4e0663ea93);
+            
+        
+
+        marker_e31d06b6f0bdcd19e6a2bd865a6bd803.bindPopup(popup_cfec85cc4dcbc4fb25eee74dd28d9206)
+        ;
+
+        
+    
+    
+            marker_e31d06b6f0bdcd19e6a2bd865a6bd803.bindTooltip(
+                `<div>
+                     Abilene Municipal Courts
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_365330ca42664e7896805fe22109efe7 = L.marker(
+                [32.44674868205182, -99.73248476606938],
+                {
+}
+            ).addTo(feature_group_2d85349280f0b843a72d46e387a3b3d0);
+        
+    
+            var icon_c31e94368daaa533bd0695925c7d46bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_365330ca42664e7896805fe22109efe7.setIcon(icon_c31e94368daaa533bd0695925c7d46bc);
+        
+    
+        var popup_33ea2c9c048d38cbb544fdf5a9e6c4a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f8f18ecbed7e1feb84acb1c05f17957 = $(`<div id="html_6f8f18ecbed7e1feb84acb1c05f17957" style="width: 100.0%; height: 100.0%;"><a href="https://www.taylorcounty.texas.gov/204/County-Courts-at-Law" target="_blank">Info</a></div>`)[0];
+                popup_33ea2c9c048d38cbb544fdf5a9e6c4a6.setContent(html_6f8f18ecbed7e1feb84acb1c05f17957);
+            
+        
+
+        marker_365330ca42664e7896805fe22109efe7.bindPopup(popup_33ea2c9c048d38cbb544fdf5a9e6c4a6)
+        ;
+
+        
+    
+    
+            marker_365330ca42664e7896805fe22109efe7.bindTooltip(
+                `<div>
+                     Taylor County Courthouse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_208af8ac4e9d228a6609b55da429778f = L.marker(
+                [32.4968399358427, -99.64642532740997],
+                {
+}
+            ).addTo(feature_group_2d85349280f0b843a72d46e387a3b3d0);
+        
+    
+            var icon_c03bf042bbe7577827a14ea0dab6ac46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_208af8ac4e9d228a6609b55da429778f.setIcon(icon_c03bf042bbe7577827a14ea0dab6ac46);
+        
+    
+        var popup_ef6907b4ea8058a72e56e4027fb87146 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cfb9282f43f6951e58ee845177bb491 = $(`<div id="html_5cfb9282f43f6951e58ee845177bb491" style="width: 100.0%; height: 100.0%;"><a href="https://www.dps.texas.gov/" target="_blank">Website</a></div>`)[0];
+                popup_ef6907b4ea8058a72e56e4027fb87146.setContent(html_5cfb9282f43f6951e58ee845177bb491);
+            
+        
+
+        marker_208af8ac4e9d228a6609b55da429778f.bindPopup(popup_ef6907b4ea8058a72e56e4027fb87146)
+        ;
+
+        
+    
+    
+            marker_208af8ac4e9d228a6609b55da429778f.bindTooltip(
+                `<div>
+                     Texas Dept. of Public Safety
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e785c609705afce6681704750f05c9e8 = L.marker(
+                [32.46027105081111, -99.78412632848287],
+                {
+}
+            ).addTo(feature_group_2d85349280f0b843a72d46e387a3b3d0);
+        
+    
+            var icon_5bdec6e0f19ca99711f8252bfee51b41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e785c609705afce6681704750f05c9e8.setIcon(icon_5bdec6e0f19ca99711f8252bfee51b41);
+        
+    
+        var popup_f7cb084de147c4038bd16f6119b061e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4f67266a4dd4b7312a7376b6b43bdaf = $(`<div id="html_b4f67266a4dd4b7312a7376b6b43bdaf" style="width: 100.0%; height: 100.0%;"><a href="https://www.hhs.texas.gov/" target="_blank">Website</a></div>`)[0];
+                popup_f7cb084de147c4038bd16f6119b061e4.setContent(html_b4f67266a4dd4b7312a7376b6b43bdaf);
+            
+        
+
+        marker_e785c609705afce6681704750f05c9e8.bindPopup(popup_f7cb084de147c4038bd16f6119b061e4)
+        ;
+
+        
+    
+    
+            marker_e785c609705afce6681704750f05c9e8.bindTooltip(
+                `<div>
+                     Health & Human Services
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1230ba12f539a98efd5547471d466e0a = L.marker(
+                [32.456573575820805, -99.72479949186392],
+                {
+}
+            ).addTo(feature_group_2d85349280f0b843a72d46e387a3b3d0);
+        
+    
+            var icon_eb07239b5741bb743fcc91f56957e2d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1230ba12f539a98efd5547471d466e0a.setIcon(icon_eb07239b5741bb743fcc91f56957e2d4);
+        
+    
+        var popup_97fe57b0a2204d020769f0bedf672756 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08c3902bf070e13ccc2bd19645faa4f6 = $(`<div id="html_08c3902bf070e13ccc2bd19645faa4f6" style="width: 100.0%; height: 100.0%;"><a href="https://abilenetx.gov/159/Public-Health" target="_blank">Website</a></div>`)[0];
+                popup_97fe57b0a2204d020769f0bedf672756.setContent(html_08c3902bf070e13ccc2bd19645faa4f6);
+            
+        
+
+        marker_1230ba12f539a98efd5547471d466e0a.bindPopup(popup_97fe57b0a2204d020769f0bedf672756)
+        ;
+
+        
+    
+    
+            marker_1230ba12f539a98efd5547471d466e0a.bindTooltip(
+                `<div>
+                     Health Dept.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0e6be5a405c6d4fe802faa7e583d3b67 = L.marker(
+                [32.446511324781206, -99.72674437458245],
+                {
+}
+            ).addTo(feature_group_2d85349280f0b843a72d46e387a3b3d0);
+        
+    
+            var icon_014f7ff882eb6a30a2e1d60b0c241f28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0e6be5a405c6d4fe802faa7e583d3b67.setIcon(icon_014f7ff882eb6a30a2e1d60b0c241f28);
+        
+    
+        var popup_460a00e62f044bc9ae148efe110ad2cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2eb5fcbba4a273527cbd5346ac3cbac = $(`<div id="html_f2eb5fcbba4a273527cbd5346ac3cbac" style="width: 100.0%; height: 100.0%;"><a href="https://www.taylorcounty.texas.gov/185/Motor-Vehicle-Registration" target="_blank">Website</a></div>`)[0];
+                popup_460a00e62f044bc9ae148efe110ad2cf.setContent(html_f2eb5fcbba4a273527cbd5346ac3cbac);
+            
+        
+
+        marker_0e6be5a405c6d4fe802faa7e583d3b67.bindPopup(popup_460a00e62f044bc9ae148efe110ad2cf)
+        ;
+
+        
+    
+    
+            marker_0e6be5a405c6d4fe802faa7e583d3b67.bindTooltip(
+                `<div>
+                     Motor Vehicle Registration
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5f4adba1b421fcaf910bb7d551162ba2 = L.marker(
+                [32.43818724141249, -99.70394489432898],
+                {
+}
+            ).addTo(feature_group_2d85349280f0b843a72d46e387a3b3d0);
+        
+    
+            var icon_af9fcefa0ea421ab4351fd90f13e52c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5f4adba1b421fcaf910bb7d551162ba2.setIcon(icon_af9fcefa0ea421ab4351fd90f13e52c4);
+        
+    
+        var popup_63e62ef2d5136a68954bde1ad3773333 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61f053f82f4837c07ec585ce0660a957 = $(`<div id="html_61f053f82f4837c07ec585ce0660a957" style="width: 100.0%; height: 100.0%;"><a href="https://www.ssa.gov/" target="_blank">Website</a></div>`)[0];
+                popup_63e62ef2d5136a68954bde1ad3773333.setContent(html_61f053f82f4837c07ec585ce0660a957);
+            
+        
+
+        marker_5f4adba1b421fcaf910bb7d551162ba2.bindPopup(popup_63e62ef2d5136a68954bde1ad3773333)
+        ;
+
+        
+    
+    
+            marker_5f4adba1b421fcaf910bb7d551162ba2.bindTooltip(
+                `<div>
+                     Social Security Office
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c0585a25c58dbfdcea4a6ff968d48a6e = L.marker(
+                [32.46706974026797, -99.59636472632224],
+                {
+}
+            ).addTo(feature_group_2d85349280f0b843a72d46e387a3b3d0);
+        
+    
+            var icon_c80211bdfd9fc8ff75e7c7ddca014bbb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c0585a25c58dbfdcea4a6ff968d48a6e.setIcon(icon_c80211bdfd9fc8ff75e7c7ddca014bbb);
+        
+    
+        var popup_a2752ba33f0366bc795005a4e8a86929 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d61efc1fa42fdb50043b42ace6cededc = $(`<div id="html_d61efc1fa42fdb50043b42ace6cededc" style="width: 100.0%; height: 100.0%;"><a href="https://wfswct.org/" target="_blank">Website</a></div>`)[0];
+                popup_a2752ba33f0366bc795005a4e8a86929.setContent(html_d61efc1fa42fdb50043b42ace6cededc);
+            
+        
+
+        marker_c0585a25c58dbfdcea4a6ff968d48a6e.bindPopup(popup_a2752ba33f0366bc795005a4e8a86929)
+        ;
+
+        
+    
+    
+            marker_c0585a25c58dbfdcea4a6ff968d48a6e.bindTooltip(
+                `<div>
+                     Workforce Solutions of W. Central Texas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_2d85349280f0b843a72d46e387a3b3d0.addTo(map_dfd2679a11dfd14ab910d3b5692cf3d0);
+        
+    
+            var feature_group_2aa2228b784f1cb1e09327359e70ce57 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_7b4a1ef592f488bda34747a04fee61c2 = L.marker(
+                [32.44488442156445, -99.77912254703799],
+                {
+}
+            ).addTo(feature_group_2aa2228b784f1cb1e09327359e70ce57);
+        
+    
+            var icon_6680ca8b62c272e6a373bc0c576643be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7b4a1ef592f488bda34747a04fee61c2.setIcon(icon_6680ca8b62c272e6a373bc0c576643be);
+        
+    
+        var popup_cb537e3a410f7d817fbba32dd226296a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab8289d6b1d53c257cf7d078cf3d5d9b = $(`<div id="html_ab8289d6b1d53c257cf7d078cf3d5d9b" style="width: 100.0%; height: 100.0%;"><a href="https://www.findhelp.org/abilene-callahan-baptist-association-(acba)--abilene-tx--abilene-baptist-association-social-ministries/6031012792500224?postal=79601" target="_blank">Associated Website</a></div>`)[0];
+                popup_cb537e3a410f7d817fbba32dd226296a.setContent(html_ab8289d6b1d53c257cf7d078cf3d5d9b);
+            
+        
+
+        marker_7b4a1ef592f488bda34747a04fee61c2.bindPopup(popup_cb537e3a410f7d817fbba32dd226296a)
+        ;
+
+        
+    
+    
+            marker_7b4a1ef592f488bda34747a04fee61c2.bindTooltip(
+                `<div>
+                     Baptist Social Ministry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8025536a72d7554bdd13e243033e133f = L.marker(
+                [32.46100432967644, -99.75931361947214],
+                {
+}
+            ).addTo(feature_group_2aa2228b784f1cb1e09327359e70ce57);
+        
+    
+            var icon_2abfca9f55409ab9e4143847ff2acb7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8025536a72d7554bdd13e243033e133f.setIcon(icon_2abfca9f55409ab9e4143847ff2acb7b);
+        
+    
+        var popup_21efed33e2cc57db9eb7acf6f46b9833 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5e337cf011786d9e5c730fa2c07e111 = $(`<div id="html_c5e337cf011786d9e5c730fa2c07e111" style="width: 100.0%; height: 100.0%;"><a href="https://www.cscabilene.org/" target="_blank">Website</a></div>`)[0];
+                popup_21efed33e2cc57db9eb7acf6f46b9833.setContent(html_c5e337cf011786d9e5c730fa2c07e111);
+            
+        
+
+        marker_8025536a72d7554bdd13e243033e133f.bindPopup(popup_21efed33e2cc57db9eb7acf6f46b9833)
+        ;
+
+        
+    
+    
+            marker_8025536a72d7554bdd13e243033e133f.bindTooltip(
+                `<div>
+                     Christian Service Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6d76b6290d307a6e38ec9123925a0a8b = L.marker(
+                [32.4548833495434, -99.7377443329671],
+                {
+}
+            ).addTo(feature_group_2aa2228b784f1cb1e09327359e70ce57);
+        
+    
+            var icon_ec712e9633e9351ca46eb8845b68a0d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6d76b6290d307a6e38ec9123925a0a8b.setIcon(icon_ec712e9633e9351ca46eb8845b68a0d8);
+        
+    
+        var popup_80d01026401c66a56d8fe8c7ff081d33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f548179f81438eda49b915b8aa171ac = $(`<div id="html_5f548179f81438eda49b915b8aa171ac" style="width: 100.0%; height: 100.0%;"><a href="https://www.cwjcabilene.org/" target="_blank">Website</a></div>`)[0];
+                popup_80d01026401c66a56d8fe8c7ff081d33.setContent(html_5f548179f81438eda49b915b8aa171ac);
+            
+        
+
+        marker_6d76b6290d307a6e38ec9123925a0a8b.bindPopup(popup_80d01026401c66a56d8fe8c7ff081d33)
+        ;
+
+        
+    
+    
+            marker_6d76b6290d307a6e38ec9123925a0a8b.bindTooltip(
+                `<div>
+                     Christian Women's Job Corps Abilene
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bbe2908a300542f32d4bd103ce556597 = L.marker(
+                [32.46395176640176, -99.7568537464616],
+                {
+}
+            ).addTo(feature_group_2aa2228b784f1cb1e09327359e70ce57);
+        
+    
+            var icon_a5030e5e4adb7d02ff85ff9540f7e3b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bbe2908a300542f32d4bd103ce556597.setIcon(icon_a5030e5e4adb7d02ff85ff9540f7e3b4);
+        
+    
+        var popup_e310f8df2e9a3889d3ee23632676b372 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_436c0f3451d73f2c3328da357531214f = $(`<div id="html_436c0f3451d73f2c3328da357531214f" style="width: 100.0%; height: 100.0%;"><a href="https://faithworksofabilene.org/" target="_blank">Website</a></div>`)[0];
+                popup_e310f8df2e9a3889d3ee23632676b372.setContent(html_436c0f3451d73f2c3328da357531214f);
+            
+        
+
+        marker_bbe2908a300542f32d4bd103ce556597.bindPopup(popup_e310f8df2e9a3889d3ee23632676b372)
+        ;
+
+        
+    
+    
+            marker_bbe2908a300542f32d4bd103ce556597.bindTooltip(
+                `<div>
+                     Faithworks of Abilene
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4356cb962bb718749517544b66c2eb10 = L.marker(
+                [32.46580755460719, -99.74004868821557],
+                {
+}
+            ).addTo(feature_group_2aa2228b784f1cb1e09327359e70ce57);
+        
+    
+            var icon_738d66de36c967631b12eee7027c874b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4356cb962bb718749517544b66c2eb10.setIcon(icon_738d66de36c967631b12eee7027c874b);
+        
+    
+        var popup_0b5e82c6311517813f7c9a61dfc9821c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d9cb0ac9d189c8311310b7de89734a1 = $(`<div id="html_6d9cb0ac9d189c8311310b7de89734a1" style="width: 100.0%; height: 100.0%;"><a href="https://www.facebook.com/GraceUMCAbilene/" target="_blank">Facebook</a></div>`)[0];
+                popup_0b5e82c6311517813f7c9a61dfc9821c.setContent(html_6d9cb0ac9d189c8311310b7de89734a1);
+            
+        
+
+        marker_4356cb962bb718749517544b66c2eb10.bindPopup(popup_0b5e82c6311517813f7c9a61dfc9821c)
+        ;
+
+        
+    
+    
+            marker_4356cb962bb718749517544b66c2eb10.bindTooltip(
+                `<div>
+                     For the Children Clothing Ministry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b3dd0fb3d85b0eaf04803f29f18679a2 = L.marker(
+                [32.452791207471584, -99.75608547358625],
+                {
+}
+            ).addTo(feature_group_2aa2228b784f1cb1e09327359e70ce57);
+        
+    
+            var icon_b42f3fe7d15a799f9de412969ca28022 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b3dd0fb3d85b0eaf04803f29f18679a2.setIcon(icon_b42f3fe7d15a799f9de412969ca28022);
+        
+    
+        var popup_cff7babf42d896c4849f1c4628432f20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bf94b3fd29c0d8de008c9ae072969da = $(`<div id="html_1bf94b3fd29c0d8de008c9ae072969da" style="width: 100.0%; height: 100.0%;"><a href="https://lcmin.com/" target="_blank">Website</a></div>`)[0];
+                popup_cff7babf42d896c4849f1c4628432f20.setContent(html_1bf94b3fd29c0d8de008c9ae072969da);
+            
+        
+
+        marker_b3dd0fb3d85b0eaf04803f29f18679a2.bindPopup(popup_cff7babf42d896c4849f1c4628432f20)
+        ;
+
+        
+    
+    
+            marker_b3dd0fb3d85b0eaf04803f29f18679a2.bindTooltip(
+                `<div>
+                     Love and Care ministries
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_01a7bc88d6a77b7564b8350c4bbf6301 = L.marker(
+                [32.45560907824628, -99.73271892184007],
+                {
+}
+            ).addTo(feature_group_2aa2228b784f1cb1e09327359e70ce57);
+        
+    
+            var icon_128c293b9d63af2ee3b6ce041f298e88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_01a7bc88d6a77b7564b8350c4bbf6301.setIcon(icon_128c293b9d63af2ee3b6ce041f298e88);
+        
+    
+        var popup_25ae9796fbee0a829e88d2b8b71797e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d406fb1806a74029c6f05b8b8bd14b9e = $(`<div id="html_d406fb1806a74029c6f05b8b8bd14b9e" style="width: 100.0%; height: 100.0%;"><a href="https://www.goodwillwesttexas.org/locations" target="_blank">:Locations across West Tx</a></div>`)[0];
+                popup_25ae9796fbee0a829e88d2b8b71797e2.setContent(html_d406fb1806a74029c6f05b8b8bd14b9e);
+            
+        
+
+        marker_01a7bc88d6a77b7564b8350c4bbf6301.bindPopup(popup_25ae9796fbee0a829e88d2b8b71797e2)
+        ;
+
+        
+    
+    
+            marker_01a7bc88d6a77b7564b8350c4bbf6301.bindTooltip(
+                `<div>
+                     Goodwill
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a01c721c4678bda3473661825c60f093 = L.marker(
+                [32.43096794306426, -99.74679519048617],
+                {
+}
+            ).addTo(feature_group_2aa2228b784f1cb1e09327359e70ce57);
+        
+    
+            var icon_75a66798c5b73f4dad2f6ea4247c5246 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a01c721c4678bda3473661825c60f093.setIcon(icon_75a66798c5b73f4dad2f6ea4247c5246);
+        
+    
+        var popup_1f18f2a83742751c038dffc68702f109 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7521c05073a44ab73ab2c5e0d9b25016 = $(`<div id="html_7521c05073a44ab73ab2c5e0d9b25016" style="width: 100.0%; height: 100.0%;"><a href="https://southernusa.salvationarmy.org/texas-abilene/" target="_blank">Website</a></div>`)[0];
+                popup_1f18f2a83742751c038dffc68702f109.setContent(html_7521c05073a44ab73ab2c5e0d9b25016);
+            
+        
+
+        marker_a01c721c4678bda3473661825c60f093.bindPopup(popup_1f18f2a83742751c038dffc68702f109)
+        ;
+
+        
+    
+    
+            marker_a01c721c4678bda3473661825c60f093.bindTooltip(
+                `<div>
+                     Salvation Army
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a0d02f4391379d971dfc113de472fc8f = L.marker(
+                [32.456875832878545, -99.73038112685462],
+                {
+}
+            ).addTo(feature_group_2aa2228b784f1cb1e09327359e70ce57);
+        
+    
+            var icon_6e869e8b3003cbc77fe0ab44c9a60d01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a0d02f4391379d971dfc113de472fc8f.setIcon(icon_6e869e8b3003cbc77fe0ab44c9a60d01);
+        
+    
+        var popup_17fec7257a6e8c5a20e4ad412ec54e7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da2b22b6f02beb927f9ae4102a78e082 = $(`<div id="html_da2b22b6f02beb927f9ae4102a78e082" style="width: 100.0%; height: 100.0%;"><a href="https://www.facebook.com/thethrifthouseinabilenetexas/" target="_blank">Facebook</a></div>`)[0];
+                popup_17fec7257a6e8c5a20e4ad412ec54e7a.setContent(html_da2b22b6f02beb927f9ae4102a78e082);
+            
+        
+
+        marker_a0d02f4391379d971dfc113de472fc8f.bindPopup(popup_17fec7257a6e8c5a20e4ad412ec54e7a)
+        ;
+
+        
+    
+    
+            marker_a0d02f4391379d971dfc113de472fc8f.bindTooltip(
+                `<div>
+                     Thrift House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_2aa2228b784f1cb1e09327359e70ce57.addTo(map_dfd2679a11dfd14ab910d3b5692cf3d0);
+        
+    
+            var feature_group_96a0f7e2d60ed00f9044de53c54b5952 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_c17b2f709c44967ebb47e96503e2d043 = L.marker(
+                [32.422, -99.7353],
+                {
+}
+            ).addTo(feature_group_96a0f7e2d60ed00f9044de53c54b5952);
+        
+    
+            var icon_a1100a21cabe0d615534e806131c1eeb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c17b2f709c44967ebb47e96503e2d043.setIcon(icon_a1100a21cabe0d615534e806131c1eeb);
+        
+    
+        var popup_82ac5b1a580685a70d6329c5442c187b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b53b0c03716dd64e9ae8d61fedbaa0f = $(`<div id="html_8b53b0c03716dd64e9ae8d61fedbaa0f" style="width: 100.0%; height: 100.0%;">South Branch Public Library</div>`)[0];
+                popup_82ac5b1a580685a70d6329c5442c187b.setContent(html_8b53b0c03716dd64e9ae8d61fedbaa0f);
+            
+        
+
+        marker_c17b2f709c44967ebb47e96503e2d043.bindPopup(popup_82ac5b1a580685a70d6329c5442c187b)
+        ;
+
+        
+    
+    
+            marker_c17b2f709c44967ebb47e96503e2d043.bindTooltip(
+                `<div>
+                     South Branch Public Library
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_52904a39953a785d0119880c44e6de2a = L.marker(
+                [32.4697, -99.7334],
+                {
+}
+            ).addTo(feature_group_96a0f7e2d60ed00f9044de53c54b5952);
+        
+    
+            var icon_9caf50c7ee66e9ef0e8efca8c0bfedac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_52904a39953a785d0119880c44e6de2a.setIcon(icon_9caf50c7ee66e9ef0e8efca8c0bfedac);
+        
+    
+        var popup_56c8a7e91399f8e6ed89e0aa20911180 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdfa5ab92c33937a6ba22979b4191c39 = $(`<div id="html_bdfa5ab92c33937a6ba22979b4191c39" style="width: 100.0%; height: 100.0%;">Mockingbird Public Library</div>`)[0];
+                popup_56c8a7e91399f8e6ed89e0aa20911180.setContent(html_bdfa5ab92c33937a6ba22979b4191c39);
+            
+        
+
+        marker_52904a39953a785d0119880c44e6de2a.bindPopup(popup_56c8a7e91399f8e6ed89e0aa20911180)
+        ;
+
+        
+    
+    
+            marker_52904a39953a785d0119880c44e6de2a.bindTooltip(
+                `<div>
+                     Mockingbird Public Library
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fbd868f35b20def5c7ead3bdc166305f = L.marker(
+                [32.4489, -99.733],
+                {
+}
+            ).addTo(feature_group_96a0f7e2d60ed00f9044de53c54b5952);
+        
+    
+            var icon_8390ef81737100e26f214ad2ed8c4141 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fbd868f35b20def5c7ead3bdc166305f.setIcon(icon_8390ef81737100e26f214ad2ed8c4141);
+        
+    
+        var popup_f34e776dff855d9a01cb6da311f6047e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02ac5c42b7e79692649ec0fc903ea77c = $(`<div id="html_02ac5c42b7e79692649ec0fc903ea77c" style="width: 100.0%; height: 100.0%;">Abilene Public Library</div>`)[0];
+                popup_f34e776dff855d9a01cb6da311f6047e.setContent(html_02ac5c42b7e79692649ec0fc903ea77c);
+            
+        
+
+        marker_fbd868f35b20def5c7ead3bdc166305f.bindPopup(popup_f34e776dff855d9a01cb6da311f6047e)
+        ;
+
+        
+    
+    
+            marker_fbd868f35b20def5c7ead3bdc166305f.bindTooltip(
+                `<div>
+                     Abilene Public Library
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_96a0f7e2d60ed00f9044de53c54b5952.addTo(map_dfd2679a11dfd14ab910d3b5692cf3d0);
+        
+    
+
+            var geocoderOpts_geocoder_a2256f82e48ff58f23edd2149c03901b = {
+  "collapsed": false,
+  "position": "topright",
+  "defaultMarkGeocode": true,
+  "zoom": 11,
+  "provider": "nominatim",
+  "providerOptions": {
+},
+};
+
+            // note: geocoder name should start with lowercase
+            var geocoderName_geocoder_a2256f82e48ff58f23edd2149c03901b = geocoderOpts_geocoder_a2256f82e48ff58f23edd2149c03901b["provider"];
+
+            var customGeocoder_geocoder_a2256f82e48ff58f23edd2149c03901b = L.Control.Geocoder[ geocoderName_geocoder_a2256f82e48ff58f23edd2149c03901b ](
+                geocoderOpts_geocoder_a2256f82e48ff58f23edd2149c03901b['providerOptions']
+            );
+            geocoderOpts_geocoder_a2256f82e48ff58f23edd2149c03901b["geocoder"] = customGeocoder_geocoder_a2256f82e48ff58f23edd2149c03901b;
+
+            L.Control.geocoder(
+                geocoderOpts_geocoder_a2256f82e48ff58f23edd2149c03901b
+            ).on('markgeocode', function(e) {
+                var zoom = geocoderOpts_geocoder_a2256f82e48ff58f23edd2149c03901b['zoom'] || map_dfd2679a11dfd14ab910d3b5692cf3d0.getZoom();
+                map_dfd2679a11dfd14ab910d3b5692cf3d0.setView(e.geocode.center, zoom);
+            }).addTo(map_dfd2679a11dfd14ab910d3b5692cf3d0);
+
+        
+    
+            var layer_control_a52935af9dccd88c3d2b92e6ce17208c_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e3eb4bf680c20d335909917fc9cd49f9,
+                },
+                overlays :  {
+                    "Food Pantry" : feature_group_d916f5ab93b9ffa73934d7107a407a6a,
+                    "Medical" : feature_group_2f05abf8ba7bd2d84890212e025ad7da,
+                    "Emergency Shelter" : feature_group_da81031a1a118cffb5f0784ee82cf5d8,
+                    "Government" : feature_group_2d85349280f0b843a72d46e387a3b3d0,
+                    "Clothing" : feature_group_2aa2228b784f1cb1e09327359e70ce57,
+                    "Library" : feature_group_96a0f7e2d60ed00f9044de53c54b5952,
+                },
+            };
+            let layer_control_a52935af9dccd88c3d2b92e6ce17208c = L.control.layers(
+                layer_control_a52935af9dccd88c3d2b92e6ce17208c_layers.base_layers,
+                layer_control_a52935af9dccd88c3d2b92e6ce17208c_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_dfd2679a11dfd14ab910d3b5692cf3d0);
+
+        
+    
+            var locate_control_2e855a3fd06b07e37869d09a92f5bb34 = L.control.locate(
+                {}
+            ).addTo(map_dfd2679a11dfd14ab910d3b5692cf3d0);
+            
+        
+    
+            var mouse_position_ef59a10228f69692cab6af1460f192f2 = new L.Control.MousePosition(
+                {
+  "position": "bottomright",
+  "separator": " : ",
+  "emptyString": "Unavailable",
+  "lngFirst": false,
+  "numDigits": 5,
+  "prefix": "",
+}
+            );
+            mouse_position_ef59a10228f69692cab6af1460f192f2.options["latFormatter"] =
+                undefined;
+            mouse_position_ef59a10228f69692cab6af1460f192f2.options["lngFormatter"] =
+                undefined;
+            map_dfd2679a11dfd14ab910d3b5692cf3d0.addControl(mouse_position_ef59a10228f69692cab6af1460f192f2);
+        
+</script>
+</html>
