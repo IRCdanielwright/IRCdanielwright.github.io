@@ -6,7 +6,7 @@ Last updated 1/29/25
 
 Access the map [Abilene Map Here](https://ircdanielwright.github.io/map.htm)
 
-Access the [Permain Basin Map Here](https://ircdanielwright.github.io/map.htm)
+Access the [Permain Basin Map Here](https://ircdanielwright.github.io/pbmap.htm)
 
 Any questions? 
 daniel.wright@rescue.org
