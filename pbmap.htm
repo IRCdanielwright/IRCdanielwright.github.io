@@ -1,0 +1,2118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c063b319332cf5cb32e2162ae4c839d8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c063b319332cf5cb32e2162ae4c839d8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c063b319332cf5cb32e2162ae4c839d8 = L.map(
+                "map_c063b319332cf5cb32e2162ae4c839d8",
+                {
+                    center: [31.937821691950287, -102.25115634246956],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5d039dd694caff36c8ceebe23aea0c30 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5d039dd694caff36c8ceebe23aea0c30.addTo(map_c063b319332cf5cb32e2162ae4c839d8);
+        
+    
+            var feature_group_9d4423dce7ccb7f22f7a7001af985826 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_8e83f3ef0767f5c237ec7ba65a8a6c00 = L.marker(
+                [31.845173659153367, -102.38394911534036],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_e184b15d73bd04db17cc1fc4b25814d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8e83f3ef0767f5c237ec7ba65a8a6c00.setIcon(icon_e184b15d73bd04db17cc1fc4b25814d1);
+        
+    
+        var popup_3c281b0e35516f03efe78c3b05a3f20e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7748bf5a8fc014389d4f900ff21a7981 = $(`<div id="html_7748bf5a8fc014389d4f900ff21a7981" style="width: 100.0%; height: 100.0%;"><a href="http://www.belmontbaptist.org/" target="_blank">Website</a></div>`)[0];
+                popup_3c281b0e35516f03efe78c3b05a3f20e.setContent(html_7748bf5a8fc014389d4f900ff21a7981);
+            
+        
+
+        marker_8e83f3ef0767f5c237ec7ba65a8a6c00.bindPopup(popup_3c281b0e35516f03efe78c3b05a3f20e)
+        ;
+
+        
+    
+    
+            marker_8e83f3ef0767f5c237ec7ba65a8a6c00.bindTooltip(
+                `<div>
+                     Belmont Baptist Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ccf3b4e9720c3955c17749f5135cb47b = L.marker(
+                [31.867168320489586, -102.37893506735746],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_8a9fb1e0cbc57b54984240661a435079 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ccf3b4e9720c3955c17749f5135cb47b.setIcon(icon_8a9fb1e0cbc57b54984240661a435079);
+        
+    
+        var popup_b0df128f4ac07764f54a83fac389573b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_725f6f69338561b017b4dc3fb24289fe = $(`<div id="html_725f6f69338561b017b4dc3fb24289fe" style="width: 100.0%; height: 100.0%;"><a href="http://ccodessa.com/" target="_blank">Website</a></div>`)[0];
+                popup_b0df128f4ac07764f54a83fac389573b.setContent(html_725f6f69338561b017b4dc3fb24289fe);
+            
+        
+
+        marker_ccf3b4e9720c3955c17749f5135cb47b.bindPopup(popup_b0df128f4ac07764f54a83fac389573b)
+        ;
+
+        
+    
+    
+            marker_ccf3b4e9720c3955c17749f5135cb47b.bindTooltip(
+                `<div>
+                     Catholic Charities
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_321c37e3a94ffb514b80678654111241 = L.marker(
+                [31.870014014580228, -102.34603625939934],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_b52b608ee02fcb288670004b56b96e5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_321c37e3a94ffb514b80678654111241.setIcon(icon_b52b608ee02fcb288670004b56b96e5b);
+        
+    
+        var popup_10f76e7ac7f83ac77a51602d3401bd22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_849519409aaf821e1dc0a7d662952f17 = $(`<div id="html_849519409aaf821e1dc0a7d662952f17" style="width: 100.0%; height: 100.0%;"><a href="https://faithfellowshipodessa.org/" target="_blank">Website</a></div>`)[0];
+                popup_10f76e7ac7f83ac77a51602d3401bd22.setContent(html_849519409aaf821e1dc0a7d662952f17);
+            
+        
+
+        marker_321c37e3a94ffb514b80678654111241.bindPopup(popup_10f76e7ac7f83ac77a51602d3401bd22)
+        ;
+
+        
+    
+    
+            marker_321c37e3a94ffb514b80678654111241.bindTooltip(
+                `<div>
+                     Faith Fellowship
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_84154a390a4daf4b32190fa23d0966b2 = L.marker(
+                [31.861578737526546, -102.32298630471362],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_3d664db0f15480acc6d711c80bf2cfa9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_84154a390a4daf4b32190fa23d0966b2.setIcon(icon_3d664db0f15480acc6d711c80bf2cfa9);
+        
+    
+        var popup_88cda60be0e5ceb957142d0e36fa3fa3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6700e5eefdf41b67f21512ce67e4d9fc = $(`<div id="html_6700e5eefdf41b67f21512ce67e4d9fc" style="width: 100.0%; height: 100.0%;"><a href="https://wtxfoodbank.org/" target="_blank">Website</a></div>`)[0];
+                popup_88cda60be0e5ceb957142d0e36fa3fa3.setContent(html_6700e5eefdf41b67f21512ce67e4d9fc);
+            
+        
+
+        marker_84154a390a4daf4b32190fa23d0966b2.bindPopup(popup_88cda60be0e5ceb957142d0e36fa3fa3)
+        ;
+
+        
+    
+    
+            marker_84154a390a4daf4b32190fa23d0966b2.bindTooltip(
+                `<div>
+                     West Tx Food Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b89f89a6e7a186aaf7b759e396137b72 = L.marker(
+                [31.856346176455578, -102.3558512593998],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_bd444a104c975e9855c81e2adbb9769f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b89f89a6e7a186aaf7b759e396137b72.setIcon(icon_bd444a104c975e9855c81e2adbb9769f);
+        
+    
+        var popup_9c69291af3a49adaeacf4c985c50fb46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67d36e372a67d427d77c03e3c3e9bd4b = $(`<div id="html_67d36e372a67d427d77c03e3c3e9bd4b" style="width: 100.0%; height: 100.0%;"><a href="http://www.jesushouseodessa.com/" target="_blank">Website</a></div>`)[0];
+                popup_9c69291af3a49adaeacf4c985c50fb46.setContent(html_67d36e372a67d427d77c03e3c3e9bd4b);
+            
+        
+
+        marker_b89f89a6e7a186aaf7b759e396137b72.bindPopup(popup_9c69291af3a49adaeacf4c985c50fb46)
+        ;
+
+        
+    
+    
+            marker_b89f89a6e7a186aaf7b759e396137b72.bindTooltip(
+                `<div>
+                     Jesus House Odessa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b371e76264bbfbd6caf440ebd5dfc453 = L.marker(
+                [31.87007779466477, -102.34606844590459],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_8bf4442eb3d71737af1f857b25f51356 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b371e76264bbfbd6caf440ebd5dfc453.setIcon(icon_8bf4442eb3d71737af1f857b25f51356);
+        
+    
+        var popup_0bae4097f9c570d8018223ed47210b68 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7911ea0cd8f776d0b7ac7cb759421a0c = $(`<div id="html_7911ea0cd8f776d0b7ac7cb759421a0c" style="width: 100.0%; height: 100.0%;"><a href="https://faithfellowshipodessa.org/" target="_blank">Website</a></div>`)[0];
+                popup_0bae4097f9c570d8018223ed47210b68.setContent(html_7911ea0cd8f776d0b7ac7cb759421a0c);
+            
+        
+
+        marker_b371e76264bbfbd6caf440ebd5dfc453.bindPopup(popup_0bae4097f9c570d8018223ed47210b68)
+        ;
+
+        
+    
+    
+            marker_b371e76264bbfbd6caf440ebd5dfc453.bindTooltip(
+                `<div>
+                     Faith Fellowship Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e985dcbf3e4e6faaef0924724efefbbe = L.marker(
+                [31.834621728209093, -102.36339693056537],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_f1f5e652b8696ce9ab302ab79f7a9f60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e985dcbf3e4e6faaef0924724efefbbe.setIcon(icon_f1f5e652b8696ce9ab302ab79f7a9f60);
+        
+    
+        var popup_ec771e98fe6cabef4f08955eb57d1422 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21be4662eb33d3a7ed06ee7cfdac9005 = $(`<div id="html_21be4662eb33d3a7ed06ee7cfdac9005" style="width: 100.0%; height: 100.0%;"><a href="" target="_blank">Website</a></div>`)[0];
+                popup_ec771e98fe6cabef4f08955eb57d1422.setContent(html_21be4662eb33d3a7ed06ee7cfdac9005);
+            
+        
+
+        marker_e985dcbf3e4e6faaef0924724efefbbe.bindPopup(popup_ec771e98fe6cabef4f08955eb57d1422)
+        ;
+
+        
+    
+    
+            marker_e985dcbf3e4e6faaef0924724efefbbe.bindTooltip(
+                `<div>
+                     Mackey Chapel UMC
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a9baa83ce86041b0f410f1d7b6054e16 = L.marker(
+                [31.850006062706267, -102.36046440484266],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_709c983c5ac563e844ea1649a14cef8c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a9baa83ce86041b0f410f1d7b6054e16.setIcon(icon_709c983c5ac563e844ea1649a14cef8c);
+        
+    
+        var popup_995671cd57dac1295ae783a9c64dadef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_774f93711bd1d04f70773af45eba0017 = $(`<div id="html_774f93711bd1d04f70773af45eba0017" style="width: 100.0%; height: 100.0%;"><a href="http://www.permianbasinmission.org/" target="_blank">Website</a></div>`)[0];
+                popup_995671cd57dac1295ae783a9c64dadef.setContent(html_774f93711bd1d04f70773af45eba0017);
+            
+        
+
+        marker_a9baa83ce86041b0f410f1d7b6054e16.bindPopup(popup_995671cd57dac1295ae783a9c64dadef)
+        ;
+
+        
+    
+    
+            marker_a9baa83ce86041b0f410f1d7b6054e16.bindTooltip(
+                `<div>
+                     Permian Basin Mission Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2c0f37e9562a9258b65f7f81d57e838d = L.marker(
+                [31.863597982803867, -102.34943005386289],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_4588eafb6b61adcc41d94d00a3beaa26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2c0f37e9562a9258b65f7f81d57e838d.setIcon(icon_4588eafb6b61adcc41d94d00a3beaa26);
+        
+    
+        var popup_bad6eee31790da3f6a0395548f288daf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bb81952921b94986a32fd325a8fd357 = $(`<div id="html_2bb81952921b94986a32fd325a8fd357" style="width: 100.0%; height: 100.0%;"><a href="https://www.stjamesodessa.org/" target="_blank">Website</a></div>`)[0];
+                popup_bad6eee31790da3f6a0395548f288daf.setContent(html_2bb81952921b94986a32fd325a8fd357);
+            
+        
+
+        marker_2c0f37e9562a9258b65f7f81d57e838d.bindPopup(popup_bad6eee31790da3f6a0395548f288daf)
+        ;
+
+        
+    
+    
+            marker_2c0f37e9562a9258b65f7f81d57e838d.bindTooltip(
+                `<div>
+                     St James Missionary Baptist
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d8ca935fa01fe8ce35c318e9c2d50732 = L.marker(
+                [31.888057964339474, -102.33235003917238],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_0db66713ead8e0aedb960fb4d868b462 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d8ca935fa01fe8ce35c318e9c2d50732.setIcon(icon_0db66713ead8e0aedb960fb4d868b462);
+        
+    
+        var popup_fa34831a59005ebd8e1316147663f401 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a51dddad2bb77e0de49eacf80e0bedb = $(`<div id="html_9a51dddad2bb77e0de49eacf80e0bedb" style="width: 100.0%; height: 100.0%;"><a href="https://www.wpcodessa.com/" target="_blank">Website</a></div>`)[0];
+                popup_fa34831a59005ebd8e1316147663f401.setContent(html_9a51dddad2bb77e0de49eacf80e0bedb);
+            
+        
+
+        marker_d8ca935fa01fe8ce35c318e9c2d50732.bindPopup(popup_fa34831a59005ebd8e1316147663f401)
+        ;
+
+        
+    
+    
+            marker_d8ca935fa01fe8ce35c318e9c2d50732.bindTooltip(
+                `<div>
+                     Westminster Presbyterian Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f82226ead9c6b26665dc322d3be32edc = L.marker(
+                [31.874523005216005, -102.35559837289395],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_2cf81b2d185f13fc3943378842e85db9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f82226ead9c6b26665dc322d3be32edc.setIcon(icon_2cf81b2d185f13fc3943378842e85db9);
+        
+    
+        var popup_916ab047b7d79900b3a116c7a3509f4f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da1d90839414dcfc71f26a0a5a5be188 = $(`<div id="html_da1d90839414dcfc71f26a0a5a5be188" style="width: 100.0%; height: 100.0%;"><a href="31.874486561216894, -102.35550181337821" target="_blank">Website</a></div>`)[0];
+                popup_916ab047b7d79900b3a116c7a3509f4f.setContent(html_da1d90839414dcfc71f26a0a5a5be188);
+            
+        
+
+        marker_f82226ead9c6b26665dc322d3be32edc.bindPopup(popup_916ab047b7d79900b3a116c7a3509f4f)
+        ;
+
+        
+    
+    
+            marker_f82226ead9c6b26665dc322d3be32edc.bindTooltip(
+                `<div>
+                     Odessa Family YMCA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_02890e63879ac55657e508bbec8f476f = L.marker(
+                [32.00152333628708, -102.09025400357064],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_9267688bf2f78fc904af9ed1caca29e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_02890e63879ac55657e508bbec8f476f.setIcon(icon_9267688bf2f78fc904af9ed1caca29e3);
+        
+    
+        var popup_cfb6b1592b6a68f6edf60aa8b4fe1d06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_608cc7b43f9489a71a64d48be34affa1 = $(`<div id="html_608cc7b43f9489a71a64d48be34affa1" style="width: 100.0%; height: 100.0%;"><a href="https://fccmidland.org/" target="_blank">Website</a></div>`)[0];
+                popup_cfb6b1592b6a68f6edf60aa8b4fe1d06.setContent(html_608cc7b43f9489a71a64d48be34affa1);
+            
+        
+
+        marker_02890e63879ac55657e508bbec8f476f.bindPopup(popup_cfb6b1592b6a68f6edf60aa8b4fe1d06)
+        ;
+
+        
+    
+    
+            marker_02890e63879ac55657e508bbec8f476f.bindTooltip(
+                `<div>
+                     First Christian Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bda6614575e617c41679f7875b499cf4 = L.marker(
+                [32.009023800184224, -102.06714435767016],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_b3752fa2bd4406fc76bcf3a653f5be88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bda6614575e617c41679f7875b499cf4.setIcon(icon_b3752fa2bd4406fc76bcf3a653f5be88);
+        
+    
+        var popup_dfaa3f0592a0405c64980b96ff0095e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb93e4eaa6db6a57414b5f4a502163a1 = $(`<div id="html_fb93e4eaa6db6a57414b5f4a502163a1" style="width: 100.0%; height: 100.0%;"><a href="http://www.casadeamigosmidland.org/" target="_blank">Website</a></div>`)[0];
+                popup_dfaa3f0592a0405c64980b96ff0095e3.setContent(html_fb93e4eaa6db6a57414b5f4a502163a1);
+            
+        
+
+        marker_bda6614575e617c41679f7875b499cf4.bindPopup(popup_dfaa3f0592a0405c64980b96ff0095e3)
+        ;
+
+        
+    
+    
+            marker_bda6614575e617c41679f7875b499cf4.bindTooltip(
+                `<div>
+                     Casa De Amigos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3c6b73730ba559e672b21a5337595c4b = L.marker(
+                [32.003391040579444, -102.12063774278505],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_75970ef59e0b4f1c479494a5be324a32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3c6b73730ba559e672b21a5337595c4b.setIcon(icon_75970ef59e0b4f1c479494a5be324a32);
+        
+    
+        var popup_0fe14eb79e108ceefa2c6d442fbd82d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ac984fcd5aa81088d46121f311a56fc = $(`<div id="html_9ac984fcd5aa81088d46121f311a56fc" style="width: 100.0%; height: 100.0%;"><a href="https://www.facebook.com/JubileeCenterofMidland" target="_blank">Website</a></div>`)[0];
+                popup_0fe14eb79e108ceefa2c6d442fbd82d9.setContent(html_9ac984fcd5aa81088d46121f311a56fc);
+            
+        
+
+        marker_3c6b73730ba559e672b21a5337595c4b.bindPopup(popup_0fe14eb79e108ceefa2c6d442fbd82d9)
+        ;
+
+        
+    
+    
+            marker_3c6b73730ba559e672b21a5337595c4b.bindTooltip(
+                `<div>
+                     Jubilee Center of Midland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1b260125f12bc9bc6aea8138f4b98cb1 = L.marker(
+                [31.988435469046465, -102.07515391948715],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_6a5be10d0baa9aca09871509e854232a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1b260125f12bc9bc6aea8138f4b98cb1.setIcon(icon_6a5be10d0baa9aca09871509e854232a);
+        
+    
+        var popup_4d2df19bb9929cd72a384ab404353cad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39e73738f422fe9b852dc0df1ecc1cc8 = $(`<div id="html_39e73738f422fe9b852dc0df1ecc1cc8" style="width: 100.0%; height: 100.0%;"><a href="https://publichealth.networkofcare.org/Andrews-tx/services/agency?pid=AreaMissionsOutreachServicesAMOSLoraineStreetLocationFoodandClothingPantry_1610_11_0" target="_blank">Website</a></div>`)[0];
+                popup_4d2df19bb9929cd72a384ab404353cad.setContent(html_39e73738f422fe9b852dc0df1ecc1cc8);
+            
+        
+
+        marker_1b260125f12bc9bc6aea8138f4b98cb1.bindPopup(popup_4d2df19bb9929cd72a384ab404353cad)
+        ;
+
+        
+    
+    
+            marker_1b260125f12bc9bc6aea8138f4b98cb1.bindTooltip(
+                `<div>
+                     AMOS: Area Missions Outreach Service
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3407764a91a55144b8acdc9826ae72cb = L.marker(
+                [40.34690402647682, -79.8219767717407],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_4dfbadd316a81a061439d9ae884b228d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3407764a91a55144b8acdc9826ae72cb.setIcon(icon_4dfbadd316a81a061439d9ae884b228d);
+        
+    
+        var popup_bc56eaa8a4f35a919f8f087d3e4bd7c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92c24ffc69e0d3c25033f127ff982df0 = $(`<div id="html_92c24ffc69e0d3c25033f127ff982df0" style="width: 100.0%; height: 100.0%;"><a href="http://www.missionagapewtx.org/" target="_blank">Website</a></div>`)[0];
+                popup_bc56eaa8a4f35a919f8f087d3e4bd7c8.setContent(html_92c24ffc69e0d3c25033f127ff982df0);
+            
+        
+
+        marker_3407764a91a55144b8acdc9826ae72cb.bindPopup(popup_bc56eaa8a4f35a919f8f087d3e4bd7c8)
+        ;
+
+        
+    
+    
+            marker_3407764a91a55144b8acdc9826ae72cb.bindTooltip(
+                `<div>
+                     Mission Agape
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_54c23c29a25410c192f41c4c4ad660a4 = L.marker(
+                [31.988467400630697, -102.0744029223533],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_20aeebd5207263770cf859c5418c6553 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-basket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_54c23c29a25410c192f41c4c4ad660a4.setIcon(icon_20aeebd5207263770cf859c5418c6553);
+        
+    
+        var popup_fccafa351e72762f5e60b6094d68daa2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_927f9504fccbd8635b8dfdb11337f5a8 = $(`<div id="html_927f9504fccbd8635b8dfdb11337f5a8" style="width: 100.0%; height: 100.0%;"><a href="https://www.findhelp.org/provider/midland-county-greater-works%252C-inc.--midland-tx/5369901916356608?postal=79705" target="_blank">Website</a></div>`)[0];
+                popup_fccafa351e72762f5e60b6094d68daa2.setContent(html_927f9504fccbd8635b8dfdb11337f5a8);
+            
+        
+
+        marker_54c23c29a25410c192f41c4c4ad660a4.bindPopup(popup_fccafa351e72762f5e60b6094d68daa2)
+        ;
+
+        
+    
+    
+            marker_54c23c29a25410c192f41c4c4ad660a4.bindTooltip(
+                `<div>
+                     Midland Co. Greater Works
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_48aeb1201bda7a7966808f0a6f4affdc = L.marker(
+                [32.01448811163806, -102.07087809211355],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_7bed0591fa95e33c724dff3d2aa1f100 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_48aeb1201bda7a7966808f0a6f4affdc.setIcon(icon_7bed0591fa95e33c724dff3d2aa1f100);
+        
+    
+        var popup_e249349dcd46e6b3b4cce8968db4a405 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e71b0459d0c2116042cc32de6c1ae620 = $(`<div id="html_e71b0459d0c2116042cc32de6c1ae620" style="width: 100.0%; height: 100.0%;"><a href="http://www.pbmhmr.com/" target="_blank">Website</a></div>`)[0];
+                popup_e249349dcd46e6b3b4cce8968db4a405.setContent(html_e71b0459d0c2116042cc32de6c1ae620);
+            
+        
+
+        marker_48aeb1201bda7a7966808f0a6f4affdc.bindPopup(popup_e249349dcd46e6b3b4cce8968db4a405)
+        ;
+
+        
+    
+    
+            marker_48aeb1201bda7a7966808f0a6f4affdc.bindTooltip(
+                `<div>
+                     PermiaCare
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d556e3c10567d9987dc0a74fab330175 = L.marker(
+                [32.00332639278101, -102.13132174478386],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_98a46dd67ed7cee5ba646cfee165738e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d556e3c10567d9987dc0a74fab330175.setIcon(icon_98a46dd67ed7cee5ba646cfee165738e);
+        
+    
+        var popup_8a63af89f723c193c60525417bf5755f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5fdf07fbf8877eb2e3f5d42ba4628eb = $(`<div id="html_c5fdf07fbf8877eb2e3f5d42ba4628eb" style="width: 100.0%; height: 100.0%;"><a href="http://www.centerstx.org/" target="_blank">Website</a></div>`)[0];
+                popup_8a63af89f723c193c60525417bf5755f.setContent(html_c5fdf07fbf8877eb2e3f5d42ba4628eb);
+            
+        
+
+        marker_d556e3c10567d9987dc0a74fab330175.bindPopup(popup_8a63af89f723c193c60525417bf5755f)
+        ;
+
+        
+    
+    
+            marker_d556e3c10567d9987dc0a74fab330175.bindTooltip(
+                `<div>
+                     Centers for Children and Families
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_427ae91deed095b8d7cb23d5f2a263fa = L.marker(
+                [31.929146780451102, -102.21431917609517],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_2bbf3429f12990679fd4749581942684 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_427ae91deed095b8d7cb23d5f2a263fa.setIcon(icon_2bbf3429f12990679fd4749581942684);
+        
+    
+        var popup_37692659b16f1b2732673997290a6269 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5996dfba4fd3cc951a6addee009f52b3 = $(`<div id="html_5996dfba4fd3cc951a6addee009f52b3" style="width: 100.0%; height: 100.0%;"><a href="http://www.samaritanccwtx.org/" target="_blank">Website</a></div>`)[0];
+                popup_37692659b16f1b2732673997290a6269.setContent(html_5996dfba4fd3cc951a6addee009f52b3);
+            
+        
+
+        marker_427ae91deed095b8d7cb23d5f2a263fa.bindPopup(popup_37692659b16f1b2732673997290a6269)
+        ;
+
+        
+    
+    
+            marker_427ae91deed095b8d7cb23d5f2a263fa.bindTooltip(
+                `<div>
+                     Samaritan Center, Inc.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_acdf41d99c5897f504dd45feea3660ac = L.marker(
+                [31.997344646234442, -102.08334810547692],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_717646756e29a8cf4e02ff4d715dd28a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_acdf41d99c5897f504dd45feea3660ac.setIcon(icon_717646756e29a8cf4e02ff4d715dd28a);
+        
+    
+        var popup_6e19f33a611d222a9b8cfc7ebb5f694a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95188f89179b1a452d01fccb588c0ba2 = $(`<div id="html_95188f89179b1a452d01fccb588c0ba2" style="width: 100.0%; height: 100.0%;"><a href="http://www.raysofhopemidland.org/" target="_blank">Website</a></div>`)[0];
+                popup_6e19f33a611d222a9b8cfc7ebb5f694a.setContent(html_95188f89179b1a452d01fccb588c0ba2);
+            
+        
+
+        marker_acdf41d99c5897f504dd45feea3660ac.bindPopup(popup_6e19f33a611d222a9b8cfc7ebb5f694a)
+        ;
+
+        
+    
+    
+            marker_acdf41d99c5897f504dd45feea3660ac.bindTooltip(
+                `<div>
+                     Rays of Hope Children's Grief Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_69b60baccd02dda7d75550d39d6f02d0 = L.marker(
+                [31.997347940801827, -102.10201550707612],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_d4838c98c8c04bb08392ed051863ca9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_69b60baccd02dda7d75550d39d6f02d0.setIcon(icon_d4838c98c8c04bb08392ed051863ca9b);
+        
+    
+        var popup_2180cb979c2157e552dd919d8465c51e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00eff9f6a066052dc9cc43027093bda2 = $(`<div id="html_00eff9f6a066052dc9cc43027093bda2" style="width: 100.0%; height: 100.0%;"><a href="http://www.ttuhsc.edu/" target="_blank">Website</a></div>`)[0];
+                popup_2180cb979c2157e552dd919d8465c51e.setContent(html_00eff9f6a066052dc9cc43027093bda2);
+            
+        
+
+        marker_69b60baccd02dda7d75550d39d6f02d0.bindPopup(popup_2180cb979c2157e552dd919d8465c51e)
+        ;
+
+        
+    
+    
+            marker_69b60baccd02dda7d75550d39d6f02d0.bindTooltip(
+                `<div>
+                     Texas Tech Psychiatry Midland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4fc4486699cee6bfa215fcfe19df38d4 = L.marker(
+                [31.83812113050633, -102.39149059209903],
+                {
+}
+            ).addTo(feature_group_9d4423dce7ccb7f22f7a7001af985826);
+        
+    
+            var icon_f80006ea1d2e6604a7a442d569e1de7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-square",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4fc4486699cee6bfa215fcfe19df38d4.setIcon(icon_f80006ea1d2e6604a7a442d569e1de7e);
+        
+    
+        var popup_de8b9027b7097d64b70fded01d06a762 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75329f692931fe9e5e7116d67527c58c = $(`<div id="html_75329f692931fe9e5e7116d67527c58c" style="width: 100.0%; height: 100.0%;"><a href="http://www.ttuhsc.edu/" target="_blank">Website</a></div>`)[0];
+                popup_de8b9027b7097d64b70fded01d06a762.setContent(html_75329f692931fe9e5e7116d67527c58c);
+            
+        
+
+        marker_4fc4486699cee6bfa215fcfe19df38d4.bindPopup(popup_de8b9027b7097d64b70fded01d06a762)
+        ;
+
+        
+    
+    
+            marker_4fc4486699cee6bfa215fcfe19df38d4.bindTooltip(
+                `<div>
+                     Texas Tech Psychiatry Odessa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_9d4423dce7ccb7f22f7a7001af985826.addTo(map_c063b319332cf5cb32e2162ae4c839d8);
+        
+    
+            var feature_group_35749a89dbe99278f905d779013a74a1 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_35749a89dbe99278f905d779013a74a1.addTo(map_c063b319332cf5cb32e2162ae4c839d8);
+        
+    
+            var feature_group_9666096c839bc223ea39b7ca23781f9a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_57e2f3e6b83c9a262904c7e1a26940f5 = L.marker(
+                [31.832202262284273, -102.35634214348138],
+                {
+}
+            ).addTo(feature_group_9666096c839bc223ea39b7ca23781f9a);
+        
+    
+            var icon_6654c35a496255ceb8ce39f961306ee6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "house",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_57e2f3e6b83c9a262904c7e1a26940f5.setIcon(icon_6654c35a496255ceb8ce39f961306ee6);
+        
+    
+        var popup_1768749531f922a67841998e951efac8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de731718b75d8a79fd2a4241837ef54f = $(`<div id="html_de731718b75d8a79fd2a4241837ef54f" style="width: 100.0%; height: 100.0%;"><a href="http://www.jallenmanagement.com/" target="_blank">Website</a></div>`)[0];
+                popup_1768749531f922a67841998e951efac8.setContent(html_de731718b75d8a79fd2a4241837ef54f);
+            
+        
+
+        marker_57e2f3e6b83c9a262904c7e1a26940f5.bindPopup(popup_1768749531f922a67841998e951efac8)
+        ;
+
+        
+    
+    
+            marker_57e2f3e6b83c9a262904c7e1a26940f5.bindTooltip(
+                `<div>
+                     Chaparral Village Apartments
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c160e0ec15de70c32a5e077be8cbe310 = L.marker(
+                [31.849806501798426, -102.39522842687383],
+                {
+}
+            ).addTo(feature_group_9666096c839bc223ea39b7ca23781f9a);
+        
+    
+            var icon_299c4c97bcfe1f85f9fe310680274a45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "house",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c160e0ec15de70c32a5e077be8cbe310.setIcon(icon_299c4c97bcfe1f85f9fe310680274a45);
+        
+    
+        var popup_d1730c283e1833ebff357a6603efd06f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fa2a2f3d304982d0dc47330c7a79949 = $(`<div id="html_6fa2a2f3d304982d0dc47330c7a79949" style="width: 100.0%; height: 100.0%;"><a href="http://www.rhf.org/location/desert-haven/" target="_blank">website</a></div>`)[0];
+                popup_d1730c283e1833ebff357a6603efd06f.setContent(html_6fa2a2f3d304982d0dc47330c7a79949);
+            
+        
+
+        marker_c160e0ec15de70c32a5e077be8cbe310.bindPopup(popup_d1730c283e1833ebff357a6603efd06f)
+        ;
+
+        
+    
+    
+            marker_c160e0ec15de70c32a5e077be8cbe310.bindTooltip(
+                `<div>
+                     Desert Haven Apartments
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_99274bd6533a8ae53291e349350d8548 = L.marker(
+                [31.8494699869272, -102.39081156647433],
+                {
+}
+            ).addTo(feature_group_9666096c839bc223ea39b7ca23781f9a);
+        
+    
+            var icon_286b4308335dded2473551c6efec2d62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "house",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_99274bd6533a8ae53291e349350d8548.setIcon(icon_286b4308335dded2473551c6efec2d62);
+        
+    
+        var popup_039689347d7415c0acf0eb20ceb0487c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0cab01addea98d53654b70168a7cab2 = $(`<div id="html_c0cab01addea98d53654b70168a7cab2" style="width: 100.0%; height: 100.0%;"><a href="http://www.doorofhopemission.com/" target="_blank">website</a></div>`)[0];
+                popup_039689347d7415c0acf0eb20ceb0487c.setContent(html_c0cab01addea98d53654b70168a7cab2);
+            
+        
+
+        marker_99274bd6533a8ae53291e349350d8548.bindPopup(popup_039689347d7415c0acf0eb20ceb0487c)
+        ;
+
+        
+    
+    
+            marker_99274bd6533a8ae53291e349350d8548.bindTooltip(
+                `<div>
+                     Door of Hope Mission
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9ebe7e9e1cd49907305a846b8e4ce6f2 = L.marker(
+                [31.86428887862295, -102.35544947511849],
+                {
+}
+            ).addTo(feature_group_9666096c839bc223ea39b7ca23781f9a);
+        
+    
+            var icon_afbf83527ddc461b26a2b18a7ea6b1a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "house",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9ebe7e9e1cd49907305a846b8e4ce6f2.setIcon(icon_afbf83527ddc461b26a2b18a7ea6b1a5);
+        
+    
+        var popup_baa4afd200dd60c2f19091c5887394a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08e79bd4ca4f570359ab1bf7f7bbef9a = $(`<div id="html_08e79bd4ca4f570359ab1bf7f7bbef9a" style="width: 100.0%; height: 100.0%;"><a href="https://sites.google.com/view/familypromiseofodessainc/home" target="_blank">website</a></div>`)[0];
+                popup_baa4afd200dd60c2f19091c5887394a5.setContent(html_08e79bd4ca4f570359ab1bf7f7bbef9a);
+            
+        
+
+        marker_9ebe7e9e1cd49907305a846b8e4ce6f2.bindPopup(popup_baa4afd200dd60c2f19091c5887394a5)
+        ;
+
+        
+    
+    
+            marker_9ebe7e9e1cd49907305a846b8e4ce6f2.bindTooltip(
+                `<div>
+                     Family Promise of Odessa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f71cb297f64a4f98efdeeb5056139f59 = L.marker(
+                [31.85628696920208, -102.35542210242133],
+                {
+}
+            ).addTo(feature_group_9666096c839bc223ea39b7ca23781f9a);
+        
+    
+            var icon_0a67a3d08441891127beb8a38647c007 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "house",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f71cb297f64a4f98efdeeb5056139f59.setIcon(icon_0a67a3d08441891127beb8a38647c007);
+        
+    
+        var popup_39075d39f281ac74960387fda803a851 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2097c0fc038e733a4b7372b9d05df472 = $(`<div id="html_2097c0fc038e733a4b7372b9d05df472" style="width: 100.0%; height: 100.0%;"><a href="http://www.jesushouseodessa.com/" target="_blank">website</a></div>`)[0];
+                popup_39075d39f281ac74960387fda803a851.setContent(html_2097c0fc038e733a4b7372b9d05df472);
+            
+        
+
+        marker_f71cb297f64a4f98efdeeb5056139f59.bindPopup(popup_39075d39f281ac74960387fda803a851)
+        ;
+
+        
+    
+    
+            marker_f71cb297f64a4f98efdeeb5056139f59.bindTooltip(
+                `<div>
+                     Jesus House Odessa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b8bf4bc652502a7ddb8ed79d13b4bcd9 = L.marker(
+                [31.886667430920355, -102.38525343483063],
+                {
+}
+            ).addTo(feature_group_9666096c839bc223ea39b7ca23781f9a);
+        
+    
+            var icon_b6f64ef33a42f296b6780f594c53c133 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "house",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b8bf4bc652502a7ddb8ed79d13b4bcd9.setIcon(icon_b6f64ef33a42f296b6780f594c53c133);
+        
+    
+        var popup_7a06006115b1760de22adf393c5ec638 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_868c42b7561cff5c1a5073ab40714203 = $(`<div id="html_868c42b7561cff5c1a5073ab40714203" style="width: 100.0%; height: 100.0%;"><a href="https://www.lapromesaapartments.com/" target="_blank">website</a></div>`)[0];
+                popup_7a06006115b1760de22adf393c5ec638.setContent(html_868c42b7561cff5c1a5073ab40714203);
+            
+        
+
+        marker_b8bf4bc652502a7ddb8ed79d13b4bcd9.bindPopup(popup_7a06006115b1760de22adf393c5ec638)
+        ;
+
+        
+    
+    
+            marker_b8bf4bc652502a7ddb8ed79d13b4bcd9.bindTooltip(
+                `<div>
+                     La Promesa Apartments
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_036946c0c5c74174213ec8089a40b8b9 = L.marker(
+                [31.846074238234205, -102.36609986977952],
+                {
+}
+            ).addTo(feature_group_9666096c839bc223ea39b7ca23781f9a);
+        
+    
+            var icon_a74be8f7d5e399af3a3ac4d1c4b5059a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "house",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_036946c0c5c74174213ec8089a40b8b9.setIcon(icon_a74be8f7d5e399af3a3ac4d1c4b5059a);
+        
+    
+        var popup_d55406e3913ed7c88248d4834d8a349a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07f6e9050be46793909f3196a8c08bf5 = $(`<div id="html_07f6e9050be46793909f3196a8c08bf5" style="width: 100.0%; height: 100.0%;"><a href="https://www.odessahatx.com/" target="_blank">website</a></div>`)[0];
+                popup_d55406e3913ed7c88248d4834d8a349a.setContent(html_07f6e9050be46793909f3196a8c08bf5);
+            
+        
+
+        marker_036946c0c5c74174213ec8089a40b8b9.bindPopup(popup_d55406e3913ed7c88248d4834d8a349a)
+        ;
+
+        
+    
+    
+            marker_036946c0c5c74174213ec8089a40b8b9.bindTooltip(
+                `<div>
+                     Odessa City Housing Authority
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_90e8f9103c7f686961167354a2e50138 = L.marker(
+                [31.86168724531174, -102.36620800428072],
+                {
+}
+            ).addTo(feature_group_9666096c839bc223ea39b7ca23781f9a);
+        
+    
+            var icon_8f148d38870d0b58b343cca0c7b5edf2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "house",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_90e8f9103c7f686961167354a2e50138.setIcon(icon_8f148d38870d0b58b343cca0c7b5edf2);
+        
+    
+        var popup_365fdee3f0db69871323952e5b6f23cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b6a12458a2faf968198516f5504b6ab = $(`<div id="html_0b6a12458a2faf968198516f5504b6ab" style="width: 100.0%; height: 100.0%;"><a href="https://southernusa.salvationarmy.org/odessa/" target="_blank">website</a></div>`)[0];
+                popup_365fdee3f0db69871323952e5b6f23cc.setContent(html_0b6a12458a2faf968198516f5504b6ab);
+            
+        
+
+        marker_90e8f9103c7f686961167354a2e50138.bindPopup(popup_365fdee3f0db69871323952e5b6f23cc)
+        ;
+
+        
+    
+    
+            marker_90e8f9103c7f686961167354a2e50138.bindTooltip(
+                `<div>
+                     Salvation Army
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_9666096c839bc223ea39b7ca23781f9a.addTo(map_c063b319332cf5cb32e2162ae4c839d8);
+        
+    
+            var feature_group_f17031a5b686db8ab786caae863510c1 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_36781855e1abf76ef60f1f7597bbaeff = L.marker(
+                [31.99767198210518, -102.1349316193915],
+                {
+}
+            ).addTo(feature_group_f17031a5b686db8ab786caae863510c1);
+        
+    
+            var icon_34a06e86c41b9ef05b3f579f2c9d2b65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_36781855e1abf76ef60f1f7597bbaeff.setIcon(icon_34a06e86c41b9ef05b3f579f2c9d2b65);
+        
+    
+        var popup_d65855088eb5da17566f626bd27d1c74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90c9b21189cad2d20bf70a8cbab54e2d = $(`<div id="html_90c9b21189cad2d20bf70a8cbab54e2d" style="width: 100.0%; height: 100.0%;"><a href="https://www.dshs.texas.gov/" target="_blank">Website</a></div>`)[0];
+                popup_d65855088eb5da17566f626bd27d1c74.setContent(html_90c9b21189cad2d20bf70a8cbab54e2d);
+            
+        
+
+        marker_36781855e1abf76ef60f1f7597bbaeff.bindPopup(popup_d65855088eb5da17566f626bd27d1c74)
+        ;
+
+        
+    
+    
+            marker_36781855e1abf76ef60f1f7597bbaeff.bindTooltip(
+                `<div>
+                     HHS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_57cd2d5db1002fe8882ede8ae9638029 = L.marker(
+                [31.887202781292224, -102.3520391427887],
+                {
+}
+            ).addTo(feature_group_f17031a5b686db8ab786caae863510c1);
+        
+    
+            var icon_a3146ed39be02f7ea1ca65b23d745567 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_57cd2d5db1002fe8882ede8ae9638029.setIcon(icon_a3146ed39be02f7ea1ca65b23d745567);
+        
+    
+        var popup_edca1afd5017ae3df412f89a70e7a2a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82da51e551a4477bbaaa2866c5067514 = $(`<div id="html_82da51e551a4477bbaaa2866c5067514" style="width: 100.0%; height: 100.0%;"><a href="https://www.ssa.gov/" target="_blank">Website</a></div>`)[0];
+                popup_edca1afd5017ae3df412f89a70e7a2a8.setContent(html_82da51e551a4477bbaaa2866c5067514);
+            
+        
+
+        marker_57cd2d5db1002fe8882ede8ae9638029.bindPopup(popup_edca1afd5017ae3df412f89a70e7a2a8)
+        ;
+
+        
+    
+    
+            marker_57cd2d5db1002fe8882ede8ae9638029.bindTooltip(
+                `<div>
+                     US Social Security Administration
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_f17031a5b686db8ab786caae863510c1.addTo(map_c063b319332cf5cb32e2162ae4c839d8);
+        
+    
+            var feature_group_b7373da9c3f46f22e41b30592f15001e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_0d1db97f5da9906e4ae378552180dadb = L.marker(
+                [31.993969579174493, -102.09634502744501],
+                {
+}
+            ).addTo(feature_group_b7373da9c3f46f22e41b30592f15001e);
+        
+    
+            var icon_385af9a81a3567c678a7f9f642c370fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0d1db97f5da9906e4ae378552180dadb.setIcon(icon_385af9a81a3567c678a7f9f642c370fd);
+        
+    
+        var popup_c3f042551cc09971faf2c26dc3755031 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b8c58415945479a090d90f000cd405a = $(`<div id="html_4b8c58415945479a090d90f000cd405a" style="width: 100.0%; height: 100.0%;"><a href="http://www.casadeamigosmidland.org/" target="_blank">Website</a></div>`)[0];
+                popup_c3f042551cc09971faf2c26dc3755031.setContent(html_4b8c58415945479a090d90f000cd405a);
+            
+        
+
+        marker_0d1db97f5da9906e4ae378552180dadb.bindPopup(popup_c3f042551cc09971faf2c26dc3755031)
+        ;
+
+        
+    
+    
+            marker_0d1db97f5da9906e4ae378552180dadb.bindTooltip(
+                `<div>
+                     Casa De Amigos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_26b26f7c1df41c25439c21173ff0b38b = L.marker(
+                [31.993896785808325, -102.09694584220955],
+                {
+}
+            ).addTo(feature_group_b7373da9c3f46f22e41b30592f15001e);
+        
+    
+            var icon_4f10d01726f6a76f5be77d89bec7aa16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_26b26f7c1df41c25439c21173ff0b38b.setIcon(icon_4f10d01726f6a76f5be77d89bec7aa16);
+        
+    
+        var popup_894d7c64953f24afb381c42758047cca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ac4186a420c46277dc6326c78039447 = $(`<div id="html_7ac4186a420c46277dc6326c78039447" style="width: 100.0%; height: 100.0%;"><a href="https://www.thelifecentertx.org/" target="_blank">Website</a></div>`)[0];
+                popup_894d7c64953f24afb381c42758047cca.setContent(html_7ac4186a420c46277dc6326c78039447);
+            
+        
+
+        marker_26b26f7c1df41c25439c21173ff0b38b.bindPopup(popup_894d7c64953f24afb381c42758047cca)
+        ;
+
+        
+    
+    
+            marker_26b26f7c1df41c25439c21173ff0b38b.bindTooltip(
+                `<div>
+                     The Life Center Midland, TX
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_713a976e0cb92c78d173bcf9d844a957 = L.marker(
+                [31.99020079992708, -102.07338929192181],
+                {
+}
+            ).addTo(feature_group_b7373da9c3f46f22e41b30592f15001e);
+        
+    
+            var icon_8816abb653e8d197839b694468c2e20a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_713a976e0cb92c78d173bcf9d844a957.setIcon(icon_8816abb653e8d197839b694468c2e20a);
+        
+    
+        var popup_a0e165ca524d5c8b4eb748be40144421 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28ecf80a4ae9b626514286ad5e57dbe1 = $(`<div id="html_28ecf80a4ae9b626514286ad5e57dbe1" style="width: 100.0%; height: 100.0%;"><a href="https://www.midlandbaptistcrisiscenter.org/" target="_blank">Website</a></div>`)[0];
+                popup_a0e165ca524d5c8b4eb748be40144421.setContent(html_28ecf80a4ae9b626514286ad5e57dbe1);
+            
+        
+
+        marker_713a976e0cb92c78d173bcf9d844a957.bindPopup(popup_a0e165ca524d5c8b4eb748be40144421)
+        ;
+
+        
+    
+    
+            marker_713a976e0cb92c78d173bcf9d844a957.bindTooltip(
+                `<div>
+                     Baptist Crisis Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2544598ec77058a4c30d1271cad4e2ad = L.marker(
+                [32.00559785615773, -102.0620035943427],
+                {
+}
+            ).addTo(feature_group_b7373da9c3f46f22e41b30592f15001e);
+        
+    
+            var icon_8ecfeae71e18ac2189a39107fc394dde = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2544598ec77058a4c30d1271cad4e2ad.setIcon(icon_8ecfeae71e18ac2189a39107fc394dde);
+        
+    
+        var popup_39a1a447f732119081efea42bba0f76f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ea1a97d4b9c74e0c43350e913ecd1cb = $(`<div id="html_0ea1a97d4b9c74e0c43350e913ecd1cb" style="width: 100.0%; height: 100.0%;"><a href="http://midlandsoupkitchen.org/" target="_blank">Website</a></div>`)[0];
+                popup_39a1a447f732119081efea42bba0f76f.setContent(html_0ea1a97d4b9c74e0c43350e913ecd1cb);
+            
+        
+
+        marker_2544598ec77058a4c30d1271cad4e2ad.bindPopup(popup_39a1a447f732119081efea42bba0f76f)
+        ;
+
+        
+    
+    
+            marker_2544598ec77058a4c30d1271cad4e2ad.bindTooltip(
+                `<div>
+                     Midland Soup Kitchen Ministry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3f06ae4082c5c55f82916cf8685acd79 = L.marker(
+                [31.99694107513339, -102.0674592287147],
+                {
+}
+            ).addTo(feature_group_b7373da9c3f46f22e41b30592f15001e);
+        
+    
+            var icon_81f8107989436725d99c7104c2478970 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shirt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3f06ae4082c5c55f82916cf8685acd79.setIcon(icon_81f8107989436725d99c7104c2478970);
+        
+    
+        var popup_596d38e40ea8e13400650000bb2b821d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28ac750da74679613c9e87592d2c8da7 = $(`<div id="html_28ac750da74679613c9e87592d2c8da7" style="width: 100.0%; height: 100.0%;"><a href="https://www.salvationarmytexas.org/midland/" target="_blank">Website</a></div>`)[0];
+                popup_596d38e40ea8e13400650000bb2b821d.setContent(html_28ac750da74679613c9e87592d2c8da7);
+            
+        
+
+        marker_3f06ae4082c5c55f82916cf8685acd79.bindPopup(popup_596d38e40ea8e13400650000bb2b821d)
+        ;
+
+        
+    
+    
+            marker_3f06ae4082c5c55f82916cf8685acd79.bindTooltip(
+                `<div>
+                     The Salvation Army of Midland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_b7373da9c3f46f22e41b30592f15001e.addTo(map_c063b319332cf5cb32e2162ae4c839d8);
+        
+    
+            var feature_group_d004e10d5faa9cfad1f9c1f7041cf14f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_d004e10d5faa9cfad1f9c1f7041cf14f.addTo(map_c063b319332cf5cb32e2162ae4c839d8);
+        
+    
+            var feature_group_d8db4f1a7d5e4e088df713b2d95d6afb = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_2b752bfb4ccb9c54ccda2ec23b9db56d = L.marker(
+                [32.03533392277884, -102.0794783475315],
+                {
+}
+            ).addTo(feature_group_d8db4f1a7d5e4e088df713b2d95d6afb);
+        
+    
+            var icon_51321644645ee6b096dcef2e0748e002 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "syringe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2b752bfb4ccb9c54ccda2ec23b9db56d.setIcon(icon_51321644645ee6b096dcef2e0748e002);
+        
+    
+        var popup_51cef95559f7e56e74969fe4d03cd4e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92d0b69b710781bef9f3800c8aea5daf = $(`<div id="html_92d0b69b710781bef9f3800c8aea5daf" style="width: 100.0%; height: 100.0%;"><a href="https://www.springboardcenter.org/" target="_blank">Website</a></div>`)[0];
+                popup_51cef95559f7e56e74969fe4d03cd4e7.setContent(html_92d0b69b710781bef9f3800c8aea5daf);
+            
+        
+
+        marker_2b752bfb4ccb9c54ccda2ec23b9db56d.bindPopup(popup_51cef95559f7e56e74969fe4d03cd4e7)
+        ;
+
+        
+    
+    
+            marker_2b752bfb4ccb9c54ccda2ec23b9db56d.bindTooltip(
+                `<div>
+                     The Springboard Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5f7897a5722c0a31bb6b1d5c5a21d10e = L.marker(
+                [31.825516669417713, -102.38464476867243],
+                {
+}
+            ).addTo(feature_group_d8db4f1a7d5e4e088df713b2d95d6afb);
+        
+    
+            var icon_d1b45c5d967723756929428513401a20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "syringe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5f7897a5722c0a31bb6b1d5c5a21d10e.setIcon(icon_d1b45c5d967723756929428513401a20);
+        
+    
+        var popup_18adba8c55106caa1a4945948c19ccf5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79e68fad700e6c95a3b8040989719a29 = $(`<div id="html_79e68fad700e6c95a3b8040989719a29" style="width: 100.0%; height: 100.0%;"><a href="http://www.permiacare.org/" target="_blank">Website</a></div>`)[0];
+                popup_18adba8c55106caa1a4945948c19ccf5.setContent(html_79e68fad700e6c95a3b8040989719a29);
+            
+        
+
+        marker_5f7897a5722c0a31bb6b1d5c5a21d10e.bindPopup(popup_18adba8c55106caa1a4945948c19ccf5)
+        ;
+
+        
+    
+    
+            marker_5f7897a5722c0a31bb6b1d5c5a21d10e.bindTooltip(
+                `<div>
+                     PermiaCare Turning Point
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1aea9a8b1b7ab3f6be185239d383d771 = L.marker(
+                [31.852211870552107, -102.36693846463022],
+                {
+}
+            ).addTo(feature_group_d8db4f1a7d5e4e088df713b2d95d6afb);
+        
+    
+            var icon_3549857e6f979c0afe5e6811ca4081a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "syringe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1aea9a8b1b7ab3f6be185239d383d771.setIcon(icon_3549857e6f979c0afe5e6811ca4081a1);
+        
+    
+        var popup_dd0d3a85071b42de3900d710b2aef827 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_943f566d62c39cda6df7d4c88cfeccd5 = $(`<div id="html_943f566d62c39cda6df7d4c88cfeccd5" style="width: 100.0%; height: 100.0%;"><a href="http://cloverhouse.com/" target="_blank">Website</a></div>`)[0];
+                popup_dd0d3a85071b42de3900d710b2aef827.setContent(html_943f566d62c39cda6df7d4c88cfeccd5);
+            
+        
+
+        marker_1aea9a8b1b7ab3f6be185239d383d771.bindPopup(popup_dd0d3a85071b42de3900d710b2aef827)
+        ;
+
+        
+    
+    
+            marker_1aea9a8b1b7ab3f6be185239d383d771.bindTooltip(
+                `<div>
+                     Clover House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_d8db4f1a7d5e4e088df713b2d95d6afb.addTo(map_c063b319332cf5cb32e2162ae4c839d8);
+        
+    
+
+            var geocoderOpts_geocoder_da417e54e9c2649274c064fc10cdf0d3 = {
+  "collapsed": false,
+  "position": "topright",
+  "defaultMarkGeocode": true,
+  "zoom": 11,
+  "provider": "nominatim",
+  "providerOptions": {
+},
+};
+
+            // note: geocoder name should start with lowercase
+            var geocoderName_geocoder_da417e54e9c2649274c064fc10cdf0d3 = geocoderOpts_geocoder_da417e54e9c2649274c064fc10cdf0d3["provider"];
+
+            var customGeocoder_geocoder_da417e54e9c2649274c064fc10cdf0d3 = L.Control.Geocoder[ geocoderName_geocoder_da417e54e9c2649274c064fc10cdf0d3 ](
+                geocoderOpts_geocoder_da417e54e9c2649274c064fc10cdf0d3['providerOptions']
+            );
+            geocoderOpts_geocoder_da417e54e9c2649274c064fc10cdf0d3["geocoder"] = customGeocoder_geocoder_da417e54e9c2649274c064fc10cdf0d3;
+
+            L.Control.geocoder(
+                geocoderOpts_geocoder_da417e54e9c2649274c064fc10cdf0d3
+            ).on('markgeocode', function(e) {
+                var zoom = geocoderOpts_geocoder_da417e54e9c2649274c064fc10cdf0d3['zoom'] || map_c063b319332cf5cb32e2162ae4c839d8.getZoom();
+                map_c063b319332cf5cb32e2162ae4c839d8.setView(e.geocode.center, zoom);
+            }).addTo(map_c063b319332cf5cb32e2162ae4c839d8);
+
+        
+    
+            var layer_control_42d60c9eca3a6a5306492df5c1ca2196_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5d039dd694caff36c8ceebe23aea0c30,
+                },
+                overlays :  {
+                    "Food Pantry" : feature_group_9d4423dce7ccb7f22f7a7001af985826,
+                    "Medical" : feature_group_35749a89dbe99278f905d779013a74a1,
+                    "Housing" : feature_group_9666096c839bc223ea39b7ca23781f9a,
+                    "Government" : feature_group_f17031a5b686db8ab786caae863510c1,
+                    "Clothing" : feature_group_b7373da9c3f46f22e41b30592f15001e,
+                    "Library" : feature_group_d004e10d5faa9cfad1f9c1f7041cf14f,
+                    "Addiction" : feature_group_d8db4f1a7d5e4e088df713b2d95d6afb,
+                },
+            };
+            let layer_control_42d60c9eca3a6a5306492df5c1ca2196 = L.control.layers(
+                layer_control_42d60c9eca3a6a5306492df5c1ca2196_layers.base_layers,
+                layer_control_42d60c9eca3a6a5306492df5c1ca2196_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_c063b319332cf5cb32e2162ae4c839d8);
+
+        
+    
+            var locate_control_bec065d515578fd851b6da4af202ea1d = L.control.locate(
+                {}
+            ).addTo(map_c063b319332cf5cb32e2162ae4c839d8);
+            
+        
+    
+            var mouse_position_aa162070541df8a1347a680514e2c031 = new L.Control.MousePosition(
+                {
+  "position": "bottomright",
+  "separator": " : ",
+  "emptyString": "Unavailable",
+  "lngFirst": false,
+  "numDigits": 5,
+  "prefix": "",
+}
+            );
+            mouse_position_aa162070541df8a1347a680514e2c031.options["latFormatter"] =
+                undefined;
+            mouse_position_aa162070541df8a1347a680514e2c031.options["lngFormatter"] =
+                undefined;
+            map_c063b319332cf5cb32e2162ae4c839d8.addControl(mouse_position_aa162070541df8a1347a680514e2c031);
+        
+</script>
+</html>
