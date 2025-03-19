@@ -1,8 +1,9 @@
 # Permian Basin map
-gee wiz I hope this works!
-
-iframe of map right here pls
+Access the [Full Size Abilene Map Here](https://ircdanielwright.github.io/pbmap.htm)
 <iframe src="pbmap.htm" height="500" width="500"></iframe>
 
+---------------------------------------------------------------------------------------
+
 # Abilene map
-<iframe src="map.htm" height="500" width="500"></iframe> 
+Access the [Full Size Abilene Map Here](https://ircdanielwright.github.io/map.htm)
+<iframe src="map.htm" height="500" width="500"></iframe>
