@@ -1,6 +1,6 @@
 # Permian Basin map
 Access the [Full Size Permian Basin Map Here](https://ircdanielwright.github.io/pbmap.htm)
-<iframe src="pbmap.htm" height="500" width="500"></iframe>
+<iframe src="pbmap.htm" height="750" width="750"></iframe>
 
 ---------------------------------------------------------------------------------------
 
