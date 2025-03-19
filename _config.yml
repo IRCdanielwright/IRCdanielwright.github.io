@@ -1,4 +1,4 @@
 theme: jekyll-theme-minimal
-title: West Texas Resource Map
-description: The purpose of these maps is to help migrants and caseworkers find critical resources to help establish self sufficiency.
+title: West Texas Migrant Resource Map
+description: The purpose of these maps is to help migrants and caseworkers find critical resources to help establish self sufficiency. Some examples include food banks, government offices, medical assistance, etc. Created using folium and github pages.
 logo: wtx.jpg
